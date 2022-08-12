@@ -8,19 +8,12 @@
     padding:0;
     box-sizing: border-box;
 }
+/*HEADER*/
 .logo {
     height: auto;
     width: 7vw;
     margin: 8%;
 
-}
-body {
-    overflow-x: hidden;
-    width: 100vw;
-    display: grid;
-    grid-template-areas: "encabezado"
-                            "main"
-                            "footer";
 }
 .encabezado {
     grid-area: encabezado;
@@ -39,8 +32,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
-    
 }
 header a {
     text-decoration: none;
@@ -48,17 +39,11 @@ header a {
     color: white;
     font-size: 1.3em;
 }
-
-h3 {
-    font-family: 'nunito';
-    text-align: center;
-}
-h6 {
-    visibility: hidden;
-}
 .encabezado_menu {
     width: 50vw;
 }
+
+/*NAV*/
 nav ul {
     list-style: none;
     display: flex;
@@ -70,13 +55,57 @@ nav ul li a {
     font-family: 'Nunito';
     font-size: 1.7em;
 }
-
 #mainIndex {
     grid-area: main;
     display: flex;
     flex-direction: column;
-
 }
+
+/*GENERAL*/
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "encabezado"
+                            "main"
+                            "footer";
+}
+h3 {
+    font-family: 'nunito';
+    text-align: center;
+}
+h6 {
+    visibility: hidden;
+}
+p {
+    font-family: 'nunito';
+    font-size: 1em;
+    text-align: justify;
+    margin: 3%;
+}
+.photoGallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    width: 98.5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em 1em;
+    align-items: stretch;
+}
+.fotoGaleria {
+    width: 100%;
+    height: 100%;
+}
+.main__secciones {
+    width: 100vw;
+    margin: 1%;
+    overflow-x: hidden;
+}
+
+/* MAIN INDEX*/
+
 #sobremiTitle {
     margin: 3%;
 }
@@ -94,36 +123,7 @@ nav ul li a {
 #fotoprincipal_mobile {
     display: none;
 }
-p {
-    font-family: 'nunito';
-    font-size: 1em;
-    text-align: justify;
-    margin: 3%;
-}
 
-.photoGallery {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: grid;
-    width: 98.5%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1em 1em;
-    align-items: stretch;
-
-}
-.fotoGaleria {
-    width: 100%;
-    height: 100%;
-}
-.main__secciones {
-    width: 100vw;
-    margin: 1%;
-    overflow-x: hidden;
-
-}
-
- 
 /*CONTACTO*/
 
 #formulario {
@@ -168,7 +168,6 @@ fieldset {
     align-items: center;
 }
 
-
 /*FOOTER*/
 
 footer {
@@ -179,7 +178,6 @@ footer {
     justify-items: center;
     margin: 5%;
 }
-
 .firma {
     height: auto;
     width: 40vw;
@@ -193,7 +191,6 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-
 /*QUERIES*/
 @media screen and (max-width:768px) {
     .encabezado {
@@ -292,7 +289,5 @@ footer {
         width: 50vw;
         justify-content: space-between;
     }
-    
-    
 }
     
