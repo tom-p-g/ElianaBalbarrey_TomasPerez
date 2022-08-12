@@ -45,7 +45,7 @@ body {
 header a {
     text-decoration: none;
     font-family: 'great vibes';
-    color: black;
+    color: white;
     font-size: 1.3em;
 }
 
@@ -66,7 +66,7 @@ nav ul {
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Nunito';
     font-size: 1.7em;
 }
@@ -151,12 +151,15 @@ fieldset {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    width: 15vw;
+    width: 20vw;
 }
 legend {
     font-size: 26pts;
     text-transform: uppercase;
     font-weight: 200;
+    background-color: lightgrey;
+    padding: 1.5%;
+    border: solid grey 0.1em;
 }
 fieldset {
     display: flex;
@@ -164,6 +167,7 @@ fieldset {
     justify-items:left;
     align-items: center;
 }
+
 
 /*FOOTER*/
 
@@ -272,11 +276,21 @@ footer {
         width: 100vw;
         height: auto;
     }
+    .photoGallery {
+        display: flex;
+        flex-direction: column;
+    }
     .formulario_div {
         flex-direction: column;
         flex-wrap: nowrap;
         width: 90vw;
         align-content: space-around;
+        padding: 5%;
+    }
+    .formulario_subdiv {
+        padding: 3%;
+        width: 50vw;
+        justify-content: space-between;
     }
     
     
