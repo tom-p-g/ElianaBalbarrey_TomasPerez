@@ -132,20 +132,24 @@ p {
     font-size: 1em;
     width: 90vw;
     margin: 5%;
-
+}
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
 }
 .formulario_div {
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
     width: 40vw;
     padding: 3%;
     margin: 1%;
 }
 .formulario_subdiv {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     width: 15vw;
 }
@@ -195,7 +199,14 @@ footer {
     nav ul li a {
         font-size: 1.4em;
     }
+    fieldset {
+        display: flex;
+        flex-direction: column;
 
+    }
+    .formulario_div {
+        width: 80vw;
+    }
     .encabezado_index {
         width: 50vw;
     }
@@ -216,6 +227,7 @@ footer {
     header a {
         font-size: 1em;
     }
+    
     footer {
         display:flex;
         flex-direction: column;
@@ -260,6 +272,13 @@ footer {
         width: 100vw;
         height: auto;
     }
+    .formulario_div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90vw;
+        align-content: space-around;
+    }
+    
     
 }
     

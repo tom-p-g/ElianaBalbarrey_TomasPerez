@@ -27,25 +27,17 @@
         <form action="" method="get" id="formulario">
             <fieldset> 
                 <legend><h4>Datos Personales</h4></legend>
-                <div class="formulario_div"><h4>Nombre y Apellido</h4>
-                    <input type="text" name="nombre" placeholder="Nombre y Apellido">
+                <div class="formulario_div"><h4>Nombre y Apellido</h4><input type="text" name="nombre" placeholder="Nombre y Apellido"></div>
+                <div class="formulario_div"><h4>E-mail</h4><input type="mail" name="mail" placeholder="ejemplo@ejemplo.com.ar"></div>
+                <div class="formulario_div"><h4>Género:</h4>
+                <div class="formulario_subdiv"><h4>Masculino</h4><input type="radio" value="Maculino" name="gender"></div>
+                <div class="formulario_subdiv"><h4>Femenino</h4><input type="radio" value="Femenino" name="gender"></div>
+                <div class="formulario_subdiv"><h4>Otro</h4><input type="radio" value="Otro" name="gender"></div>
                 </div>
-                <div class="formulario_div">
-                    <h4>E-mail</h4>
-                    <input type="mail" name="mail" placeholder="ejemplo@ejemplo.com.ar">
-                </div>
-                <div class="formulario_div"><h4>Género:</h4><br>
-                    <div class="formulario_subdiv"><h4>Masculino</h4><input type="radio" value="Maculino" name="gender"></div>
-                    <div class="formulario_subdiv"><h4>Femenino</h4><input type="radio" value="Femenino" name="gender"></div>
-                    <div class="formulario_subdiv"><h4>Otro</h4><input type="radio" value="Otro" name="gender"></div>
-                </div>
-                <div class="formulario_div"><h4>Edad:</h4>
-                    <input type="number" name="edad" min="13"	max="100">
-                </div>
-                <div class="formulario_div">
-                    <div class="formulario_subdiv"><h4>Subscripciones:</h4></div>
+                <div class="formulario_div"><h4>Edad:</h4><input type="number" name="edad" min="13" max="100"></div>
+                <div class="formulario_div"><h4>Subscripciones:</h4>
                     <div class="formulario_subdiv"><h4>Newsletter</h4><input type="checkbox" value="newsletter" name="subs"></div>
-                    <div class="formulario_subdiv"><h4>Clases de Fotografía</h4><input type="checkbox" value="clasesfoto" name="subs"></div>   
+                    <div class="formulario_subdiv"><h4>Clases de Fotografía</h4><input type="checkbox" value="clasesfoto" name="subs"></div>
                 </div>
                 <div class="formulario_div"><h4>Color Favorito:</h4>
                     <input type="color" name="color">
@@ -59,11 +51,9 @@
                         <option value="Marciano">Marciano</option>	
                     </select>
                 </div class="formulario_div">
-                <h6>invisible</h6><h6>invisible</h6><h6>invisible</h6><h6>invisible</h6>  
             </fieldset>
                 <input type="submit" value="Enviar Info">
                 <input type="reset" value="Reiniciar Info">
-
         </form>
         <footer>
             <img src="../img/firma negro.png" alt="firma de Eliana Balbarrey" class="firma">
