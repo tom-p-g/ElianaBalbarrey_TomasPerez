@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Eliana Balbarrey Fotógrafa</title>
 </head>
 
 <body>
-    <div class="encabezado">
+    <div class="encabezado" data-aos="fade-right">
         <header class="encabezado_index">
-            <a href="../index.html"><img src="../img/logo-eli.png" alt="Logo" class="logo"></a>
+            <a data-aos="flip-left" data-aos-duration="3000" href="../index.html"><img src="../img/logo-eli.png" alt="Logo" class="logo"></a>
             <a href="../index.html">
-                <h1>Eliana Balbarrey</h1>
+                <h1 data-aos="flip-right" data-aos-duration="3000">Eliana Balbarrey</h1>
             </a>
 
         </header>
         <nav class="encabezado_menu">
             <ul>
-                <li><a href="../pages/eventos.html">Eventos</a></li>
-                <li><a href="../pages/familiares.html">Familiares</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/eventos.html">Eventos</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/familiares.html">Familiares</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/productos.html">Productos</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -36,13 +37,13 @@
                 accusantium explicabo adipisci soluta, dolorum iusto labore. Maiores unde consectetur sapiente quasi et
                 harum repellendus error placeat, culpa eos dolorum ducimus?</p>
             <div class="photoGallery">
-                <div class="foto1"><img src="../img/productos/gastro1.jpg" alt="Foto gastronómica 1"
+                <div class="foto1" data-aos="flip-left"><img src="../img/productos/gastro1.jpg" alt="Foto gastronómica 1"
                         class="fotoGaleria"></div>
-                <div class="foto2"><img src="../img/productos/gastro2.jpg" alt="Foto gastronómica 2"
+                <div class="foto2" data-aos="flip-left"><img src="../img/productos/gastro2.jpg" alt="Foto gastronómica 2"
                         class="fotoGaleria"></div>
-                <div class="foto3"><img src="../img/productos/gastro3.jpg" alt="Foto gastronómica 3"
+                <div class="foto3" data-aos="flip-left"><img src="../img/productos/gastro3.jpg" alt="Foto gastronómica 3"
                         class="fotoGaleria"></div>
-                <div class="foto4"><img src="../img/productos/gastro4.jpg" alt="Foto gastronómica 4"
+                <div class="foto4" data-aos="flip-left"><img src="../img/productos/gastro4.jpg" alt="Foto gastronómica 4"
                         class="fotoGaleria"></div>
             </div>
         </section>
@@ -54,13 +55,13 @@
                 laudantium quibusdam fugiat expedita natus incidunt dolorum, rem laboriosam suscipit odit, similique
                 sequi possimus vel. Cumque in impedit sapiente illo recusandae!</p>
             <div class="photoGallery">
-                <div class="foto1"><img src="../img/productos/product1.jpg" alt="Foto producto 1" class="fotoGaleria">
+                <div class="foto1"data-aos="flip-left"><img src="../img/productos/product1.jpg" alt="Foto producto 1" class="fotoGaleria">
                 </div>
-                <div class="foto2"><img src="../img/productos/product2.jpg" alt="Foto producto 2" class="fotoGaleria">
+                <div class="foto2"data-aos="flip-left"><img src="../img/productos/product2.jpg" alt="Foto producto 2" class="fotoGaleria">
                 </div>
-                <div class="foto3"><img src="../img/productos/product3.jpg" alt="Foto producto 3" class="fotoGaleria">
+                <div class="foto3"data-aos="flip-left"><img src="../img/productos/product3.jpg" alt="Foto producto 3" class="fotoGaleria">
                 </div>
-                <div class="foto4"><img src="../img/productos/product4.jpg" alt="Foto producto 4" class="fotoGaleria">
+                <div class="foto4"data-aos="flip-left"><img src="../img/productos/product4.jpg" alt="Foto producto 4" class="fotoGaleria">
                 </div>
             </div>
         </section>
@@ -70,13 +71,16 @@
         <img src="../img/firma negro.png" alt="firma de Eliana Balbarrey" class="firma">
         <div class="rrss">
             <a href="https://www.instagram.com/elibalbarreyph/"><img src="../img/instagram-logo-circle.png"
-                    alt="logo instagram" class="logoFooter"></a>
+                    alt="logo instagram" class="logoFooter" id="insta"></a>
             <a href="https://www.facebook.com/fotografiaElianaBalbarrey/"><img
                     src="../img/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" alt="logo facebook"
-                    class="logoFooter"></a>
+                    class="logoFooter" id="face"></a>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

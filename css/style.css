@@ -15,6 +15,7 @@
     height: auto;
     width: 7vw;
     margin: 8%;
+    transition: all 1s;
 
 }
 
@@ -43,6 +44,12 @@ header a {
     font-family: 'great vibes';
     color: white;
     font-size: 1.3em;
+    transition: all 1s;
+}
+header a:hover {
+    color: #c98703;
+    scale: 1.1;
+
 }
 
 .encabezado_menu {
@@ -62,6 +69,11 @@ nav ul li a {
     color: white;
     font-family: 'Nunito';
     font-size: 1.7em;
+    transition: all 1s;
+}
+.encabezado_menu_botones:hover {
+    color: #c98703;
+    scale: 1.2;
 }
 
 #mainIndex {
@@ -84,8 +96,17 @@ body {
 h3 {
     font-family: 'nunito';
     text-align: center;
-}
+    font-size: 1.3em;
 
+    animation-name: fadein;
+    animation-iteration-count:initial;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes fadein {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 h6 {
     visibility: hidden;
 }
@@ -123,6 +144,7 @@ p {
 
 #sobremiTitle {
     margin: 3%;
+    font-size: 2em;
 }
 
 #sobremiTxt {
@@ -167,6 +189,13 @@ fieldset {
     padding: 3%;
     margin: 1%;
 }
+input {
+    font-family: 'nunito';
+    transition: all 1s;
+}
+input:focus {
+    transform:scale(1.2);
+}
 
 .formulario_subdiv {
     display: flex;
@@ -205,18 +234,51 @@ footer {
 .firma {
     height: auto;
     width: 40vw;
+  
+    
 }
+#insta {
+    
+    animation-name: insta;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
 
+}
+#face {
+   
+    animation-name: face;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+
+}
+@keyframes insta {
+    0% {transform: rotate(0deg);}
+    33% {transform:rotate(10deg);}
+    50% {transform:rotate(0deg);}
+    83% {transform:rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes face {
+    0% {transform: rotate(0deg);}
+    33% {transform:rotate(10deg);}
+    50% {transform:rotate(0deg);}
+    83% {transform:rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
 .logoFooter {
     height: auto;
     width: 5vw;
 }
 
 .rrss {
-    width: 50vw;
+    width: 40vw;
     display: flex;
     justify-content: space-around;
+    transition: all 1s;
 }
+
 
 /*QUERIES*/
 @media screen and (max-width:768px) {
@@ -285,7 +347,7 @@ footer {
 
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
     .logo {
         display: none;
     }

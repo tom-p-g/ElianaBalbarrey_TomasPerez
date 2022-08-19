@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Eliana Balbarrey Fotógrafa</title>
 </head>
 
 <body>
-    <div class="encabezado">
+    <div class="encabezado" data-aos="fade-right">
         <header class="encabezado_index">
-            <a href="../index.html"><img src="../img/logo-eli.png" alt="Logo" class="logo"></a>
+            <a data-aos="flip-left" data-aos-duration="3000" href="../index.html"><img src="../img/logo-eli.png" alt="Logo" class="logo"></a>
             <a href="../index.html">
-                <h1>Eliana Balbarrey</h1>
+                <h1 data-aos="flip-right" data-aos-duration="3000">Eliana Balbarrey</h1>
             </a>
 
         </header>
         <nav class="encabezado_menu">
             <ul>
-                <li><a href="../pages/eventos.html">Eventos</a></li>
-                <li><a href="../pages/familiares.html">Familiares</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/eventos.html">Eventos</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/familiares.html">Familiares</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/productos.html">Productos</a></li>
+                <li><a class="encabezado_menu_botones" href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -36,13 +37,13 @@
                 officiis alias. Inventore fugiat, debitis numquam corrupti officia nihil ratione doloremque modi iure.
                 Fugiat repudiandae laboriosam enim asperiores ipsam at reiciendis aliquam id molestias nemo!</p>
             <div class="photoGallery">
-                <div class="foto1"><img src="../img/familiares/embarazada1.jpg" alt="Mujer Embarazada 1"
+                <div class="foto1"data-aos="flip-left"><img src="../img/familiares/embarazada1.jpg" alt="Mujer Embarazada 1"
                         class="fotoGaleria"></div>
-                <div class="foto2"><img src="../img/familiares/embarazada2.jpg" alt="Mujer Embarazada 2"
+                <div class="foto2"data-aos="flip-left"><img src="../img/familiares/embarazada2.jpg" alt="Mujer Embarazada 2"
                         class="fotoGaleria"></div>
-                <div class="foto3"><img src="../img/familiares/embarazada3.jpg" alt="Mujer Embarazada 3"
+                <div class="foto3"data-aos="flip-left"><img src="../img/familiares/embarazada3.jpg" alt="Mujer Embarazada 3"
                         class="fotoGaleria"></div>
-                <div class="foto4"><img src="../img/familiares/embarazada4.jpg" alt="Mujer Embarazada 4"
+                <div class="foto4"data-aos="flip-left"><img src="../img/familiares/embarazada4.jpg" alt="Mujer Embarazada 4"
                         class="fotoGaleria"></div>
             </div>
         </section>
@@ -54,10 +55,10 @@
                 aspernatur magnam debitis doloremque! Nam, a quibusdam delectus possimus saepe placeat similique!
                 Aspernatur cumque debitis sint? Vel delectus expedita consequuntur eaque?</p>
             <div class="photoGallery">
-                <div class="foto1"><img src="../img/familiares/nb1.jpg" alt="Recien Nacido 1" class="fotoGaleria"></div>
-                <div class="foto2"><img src="../img/familiares/nb2.jpg" alt="Recien Nacido 2" class="fotoGaleria"></div>
-                <div class="foto3"><img src="../img/familiares/nb3.jpg" alt="Recien Nacido 3" class="fotoGaleria"></div>
-                <div class="foto4"><img src="../img/familiares/nb4.jpg" alt="Recien Nacido 4" class="fotoGaleria"></div>
+                <div class="foto1"data-aos="flip-left"><img src="../img/familiares/nb1.jpg" alt="Recien Nacido 1" class="fotoGaleria"></div>
+                <div class="foto2"data-aos="flip-left"><img src="../img/familiares/nb2.jpg" alt="Recien Nacido 2" class="fotoGaleria"></div>
+                <div class="foto3"data-aos="flip-left"><img src="../img/familiares/nb3.jpg" alt="Recien Nacido 3" class="fotoGaleria"></div>
+                <div class="foto4"data-aos="flip-left"><img src="../img/familiares/nb4.jpg" alt="Recien Nacido 4" class="fotoGaleria"></div>
             </div>
         </section>
 
@@ -66,13 +67,16 @@
         <img src="../img/firma negro.png" alt="firma de Eliana Balbarrey" class="firma">
         <div class="rrss">
             <a href="https://www.instagram.com/elibalbarreyph/"><img src="../img/instagram-logo-circle.png"
-                    alt="logo instagram" class="logoFooter"></a>
+                    alt="logo instagram" class="logoFooter" id="insta"></a>
             <a href="https://www.facebook.com/fotografiaElianaBalbarrey/"><img
                     src="../img/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" alt="logo facebook"
-                    class="logoFooter"></a>
+                    class="logoFooter" id="face"></a>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
