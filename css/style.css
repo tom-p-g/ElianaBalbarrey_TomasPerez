@@ -58,13 +58,13 @@ header a:hover {
 
 /*NAV*/
 
-nav ul {
+.menu {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul li a {
+.menu a {
     text-decoration: none;
     color: white;
     font-family: 'Nunito';
@@ -80,6 +80,14 @@ nav ul li a {
     grid-area: main;
     display: flex;
     flex-direction: column;
+}
+
+label, #check {
+    display:none
+}
+
+#indexMenu {
+    display: none;
 }
 
 /*GENERAL*/
@@ -282,14 +290,80 @@ footer {
 
 /*QUERIES*/
 @media screen and (max-width:768px) {
-    .encabezado {
+   
+    .encabezado_index {
+        display: none;
+        
+      
+    }
+    header,header a {
+        display: none;
+    }
+    .encabezado_menu {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "col1  col2"
+                            "row2 row2 ";
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+    }
+   
+    .mostrar-menu {
+        /* Mostrar "hamburguesa" más grande y con diferente cursor */
+        font-size: 2em;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        width: auto;
+        background: #c98703;
+        height: auto;
+        width: 30px;
+        grid-area: col1;
+        padding-left: 5px;
+        border-radius: 0.5em;
+        margin-left: 10px;
+    }
+    .menu {
+        /* Evitar barra de desplazamiento en documento */
+        display: none;   
+    }
+    .menu a {
+        font-size: medium;
+        padding: 0.5vh;
+    }
+    #check {
+        /* El checkbox debe estar oculto */
+        display: none;
+    }
+    #check:checked ~ .menu {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        grid-area: row2;
+        justify-content: center;
+        align-items: center;
+        
     }
+    #indexMenu {
+        display: flex;
+        font-family: 'Great Vibes';
+       
+        text-align: center;
+        grid-area: col2;
+      
+        justify-content: center;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding-right: 10vw;
+    }
+    #indexMenu a{
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
 
-    nav ul li a {
-        font-size: 1.4em;
     }
+   
+
 
     fieldset {
         display: flex;
@@ -301,13 +375,8 @@ footer {
         width: 80vw;
     }
 
-    .encabezado_index {
-        width: 50vw;
-    }
-
-    .encabezado_menu {
-        width: 100vw;
-    }
+   
+    
 
     #sobremiTxt {
         font-size: 1em;
