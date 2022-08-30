@@ -46,6 +46,7 @@ header a {
     font-size: 1.3em;
     transition: all 1s;
 }
+
 header a:hover {
     color: #c98703;
     scale: 1.1;
@@ -71,6 +72,7 @@ header a:hover {
     font-size: 1.7em;
     transition: all 1s;
 }
+
 .encabezado_menu_botones:hover {
     color: #c98703;
     scale: 1.2;
@@ -82,8 +84,9 @@ header a:hover {
     flex-direction: column;
 }
 
-label, #check {
-    display:none
+label,
+#check {
+    display: none
 }
 
 #indexMenu {
@@ -107,14 +110,21 @@ h3 {
     font-size: 1.3em;
 
     animation-name: fadein;
-    animation-iteration-count:initial;
+    animation-iteration-count: initial;
     animation-duration: 2s;
     animation-timing-function: ease-in;
 }
+
 @keyframes fadein {
-    0% {opacity: 0%;}
-    100% {opacity: 100%;}
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
+
 h6 {
     visibility: hidden;
 }
@@ -197,12 +207,14 @@ fieldset {
     padding: 3%;
     margin: 1%;
 }
+
 input {
     font-family: 'nunito';
     transition: all 1s;
 }
+
 input:focus {
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
 .formulario_subdiv {
@@ -242,39 +254,72 @@ footer {
 .firma {
     height: auto;
     width: 40vw;
-  
-    
+
+
 }
+
 #insta {
-    
+
     animation-name: insta;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
 
 }
+
 #face {
-   
+
     animation-name: face;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
 
 }
+
 @keyframes insta {
-    0% {transform: rotate(0deg);}
-    33% {transform:rotate(10deg);}
-    50% {transform:rotate(0deg);}
-    83% {transform:rotate(-10deg);}
-    100% {transform: rotate(0deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    83% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
+
 @keyframes face {
-    0% {transform: rotate(0deg);}
-    33% {transform:rotate(10deg);}
-    50% {transform:rotate(0deg);}
-    83% {transform:rotate(-10deg);}
-    100% {transform: rotate(0deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    83% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
+
 .logoFooter {
     height: auto;
     width: 5vw;
@@ -290,26 +335,29 @@ footer {
 
 /*QUERIES*/
 @media screen and (max-width:768px) {
-   
+
     .encabezado_index {
         display: none;
-        
-      
+
+
     }
-    header,header a {
+
+    header,
+    header a {
         display: none;
     }
+
     .encabezado_menu {
         width: 100vw;
         display: grid;
         grid-template-areas: "col1  col2"
-                            "row2 row2 ";
+            "row2 row2 ";
         grid-template-columns: 1fr 9fr;
         align-items: center;
     }
-   
+
     .mostrar-menu {
-        /* Mostrar "hamburguesa" más grande y con diferente cursor */
+
         font-size: 2em;
         display: inline-block;
         cursor: pointer;
@@ -323,46 +371,52 @@ footer {
         border-radius: 0.5em;
         margin-left: 10px;
     }
+
     .menu {
-        /* Evitar barra de desplazamiento en documento */
-        display: none;   
+
+        display: none;
     }
+
     .menu a {
         font-size: medium;
         padding: 0.5vh;
     }
+
     #check {
-        /* El checkbox debe estar oculto */
+
         display: none;
     }
-    #check:checked ~ .menu {
+
+    #check:checked~.menu {
         display: flex;
         flex-direction: column;
         text-align: center;
         grid-area: row2;
         justify-content: center;
         align-items: center;
-        
+
     }
+
     #indexMenu {
         display: flex;
         font-family: 'Great Vibes';
-       
+
         text-align: center;
         grid-area: col2;
-      
+
         justify-content: center;
         margin-top: 1vh;
         margin-bottom: 1vh;
         padding-right: 10vw;
     }
-    #indexMenu a{
+
+    #indexMenu a {
         text-decoration: none;
         color: white;
         font-size: 2em;
 
     }
-   
+
 
 
     fieldset {
@@ -375,8 +429,8 @@ footer {
         width: 80vw;
     }
 
-   
-    
+
+
 
     #sobremiTxt {
         font-size: 1em;
@@ -384,9 +438,7 @@ footer {
 }
 
 @media screen and (max-width:480px) {
-    nav ul li a {
-        font-size: 1em;
-    }
+    
 
     #sobremiTxt {
         font-size: 1em;
@@ -427,13 +479,8 @@ footer {
 
     }
 
-    header a {
-        font-size: 0.8em;
-    }
-
-    nav ul li a {
-        font-size: 0.9em;
-    }
+   
+   
 
     #sobremiTxt {
         font-size: 1em;
