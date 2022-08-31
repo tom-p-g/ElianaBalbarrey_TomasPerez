@@ -1,0 +1,69 @@
+.encabezado {
+    grid-area: encabezado;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $verde;
+
+    .encabezado_index {
+        width: 40vw;
+        margin-right: 5%;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        a{
+            text-decoration: none;
+            font-family: $font1;
+            color: white;
+            font-size: 1.3em;
+            transition: all 1s;
+
+            &:hover {
+                color: $dorado;
+                scale: 1.1;
+            }
+        }
+        .logo {
+            height: auto;
+            width: 7vw;
+            margin: 8%;
+            transition: all 1s;
+        
+        }
+        
+    }
+
+}
+.encabezado_menu {
+    width: 50vw;
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: $font2;
+            font-size: 1.7em;
+            transition: all 1s;
+           
+        }
+        .encabezado_menu_botones {
+            &:hover {
+                color: $dorado;
+                scale: 1.2;
+            }
+        }
+    }
+    label,#check, #indexMenu  {
+        display: none
+    }
+
+    
+}

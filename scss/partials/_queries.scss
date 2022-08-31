@@ -1,0 +1,184 @@
+@media screen and (max-width:768px) {
+    .encabezado {
+        .encabezado_index {
+            display: none;
+        }
+
+        header {
+            display: none;
+
+            a {
+                display: none;
+            }
+        }
+
+        .encabezado_menu {
+            width: 100vw;
+            display: grid;
+            grid-template-areas: "col1  col2"
+                "row2 row2 ";
+            grid-template-columns: 1fr 9fr;
+            align-items: center;
+
+            .mostrar-menu {
+
+                font-size: 2em;
+                display: inline-block;
+                cursor: pointer;
+                color: white;
+                width: auto;
+                background: #c98703;
+                height: auto;
+                width: 30px;
+                grid-area: col1;
+                padding-left: 5px;
+                border-radius: 0.5em;
+                margin-left: 10px;
+            }
+
+            #check {
+
+                display: none;
+
+                &:checked~.menu {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    grid-area: row2;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+            }
+
+            #indexMenu {
+                display: flex;
+                font-family: 'Great Vibes';
+
+                text-align: center;
+                grid-area: col2;
+
+                justify-content: center;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                padding-right: 10vw;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 2em;
+
+                }
+            }
+
+            .menu {
+                display: none;
+
+                a {
+                    font-size: medium;
+                    padding: 0.5vh;
+
+                }
+            }
+        }
+
+    }
+
+    #mainIndex {
+        
+        #fotoprincipal {
+            display: none;
+        }
+    
+        #fotoprincipal_mobile {
+            display: block;
+            width: 100vw;
+            height: auto;
+        }
+    
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .formulario_div {
+        width: 80vw;
+    }
+
+
+
+
+    #sobremiTxt {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    #sobremiTxt {
+        font-size: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        .rrss {
+
+            width: 70vw;
+        }
+        .firma {
+            width: 75vw;
+            align-self: center;
+            margin: 4%;
+        }
+    }
+
+   
+
+   
+
+}
+
+@media screen and (max-width:375px) {
+    .encabezado_index {
+        width: 80vw;
+        justify-content: center;
+
+    }
+
+
+
+
+    #sobremiTxt {
+        font-size: 1em;
+    }
+
+   
+
+
+    .photoGallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario_div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90vw;
+        align-content: space-around;
+        padding: 5%;
+    }
+
+    .formulario_subdiv {
+        padding: 3%;
+        width: 50vw;
+        justify-content: space-between;
+    }
+}

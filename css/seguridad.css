@@ -1,0 +1,517 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.logo {
+    height: auto;
+    width: 7vw;
+    margin: 8%;
+    transition: all 1s;
+
+}
+
+.encabezado {
+    grid-area: encabezado;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #43652a;
+}
+
+.encabezado_index {
+    width: 40vw;
+    margin-right: 5%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    font-family: 'great vibes';
+    color: white;
+    font-size: 1.3em;
+    transition: all 1s;
+}
+
+header a:hover {
+    color: #c98703;
+    scale: 1.1;
+
+}
+
+.encabezado_menu {
+    width: 50vw;
+}
+
+/*NAV*/
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 1.7em;
+    transition: all 1s;
+}
+
+.encabezado_menu_botones:hover {
+    color: #c98703;
+    scale: 1.2;
+}
+
+#mainIndex {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+#check {
+    display: none
+}
+
+#indexMenu {
+    display: none;
+}
+
+/*GENERAL*/
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "encabezado"
+        "main"
+        "footer";
+}
+
+h3 {
+    font-family: 'nunito';
+    text-align: center;
+    font-size: 1.3em;
+
+    animation-name: fadein;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+h6 {
+    visibility: hidden;
+}
+
+p {
+    font-family: 'nunito';
+    font-size: 1em;
+    text-align: justify;
+    margin: 3%;
+}
+
+.photoGallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    width: 98.5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em 1em;
+    align-items: stretch;
+}
+
+.fotoGaleria {
+    width: 100%;
+    height: 100%;
+}
+
+.main__secciones {
+    width: 100vw;
+    margin: 1%;
+    overflow-x: hidden;
+}
+
+/* MAIN INDEX*/
+
+#sobremiTitle {
+    margin: 3%;
+    font-size: 2em;
+}
+
+#sobremiTxt {
+    margin: 6%;
+    margin-top: 0%;
+    font-family: 'Nunito';
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#fotoprincipal {
+    width: 100vw;
+    height: auto;
+}
+
+#fotoprincipal_mobile {
+    display: none;
+}
+
+/*CONTACTO*/
+
+#formulario {
+    font-family: 'Nunito';
+    font-weight: 100;
+    font-size: 1em;
+    width: 90vw;
+    margin: 5%;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+}
+
+.formulario_div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    padding: 3%;
+    margin: 1%;
+}
+
+input {
+    font-family: 'nunito';
+    transition: all 1s;
+}
+
+input:focus {
+    transform: scale(1.2);
+}
+
+.formulario_subdiv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+legend {
+    font-size: 26pts;
+    text-transform: uppercase;
+    font-weight: 200;
+    background-color: lightgrey;
+    padding: 1.5%;
+    border: solid grey 0.1em;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    align-items: center;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 5%;
+}
+
+.firma {
+    height: auto;
+    width: 40vw;
+
+
+}
+
+#insta {
+
+    animation-name: insta;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#face {
+
+    animation-name: face;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes insta {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    83% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes face {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    83% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.logoFooter {
+    height: auto;
+    width: 5vw;
+}
+
+.rrss {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    transition: all 1s;
+}
+
+
+/*QUERIES*/
+@media screen and (max-width:768px) {
+
+    .encabezado_index {
+        display: none;
+
+
+    }
+
+    header,
+    header a {
+        display: none;
+    }
+
+    .encabezado_menu {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "col1  col2"
+            "row2 row2 ";
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+    }
+
+    .mostrar-menu {
+
+        font-size: 2em;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        width: auto;
+        background: #c98703;
+        height: auto;
+        width: 30px;
+        grid-area: col1;
+        padding-left: 5px;
+        border-radius: 0.5em;
+        margin-left: 10px;
+    }
+
+    .menu {
+
+        display: none;
+    }
+
+    .menu a {
+        font-size: medium;
+        padding: 0.5vh;
+    }
+
+    #check {
+
+        display: none;
+    }
+
+    #check:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        grid-area: row2;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #indexMenu {
+        display: flex;
+        font-family: 'Great Vibes';
+
+        text-align: center;
+        grid-area: col2;
+
+        justify-content: center;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding-right: 10vw;
+    }
+
+    #indexMenu a {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+
+    }
+
+
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .formulario_div {
+        width: 80vw;
+    }
+
+
+
+
+    #sobremiTxt {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    #sobremiTxt {
+        font-size: 1em;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .firma {
+        width: 75vw;
+        align-self: center;
+        margin: 4%;
+    }
+
+    .rrss {
+
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .logo {
+        display: none;
+    }
+
+    .encabezado_index {
+        width: 80vw;
+        justify-content: center;
+
+    }
+
+
+
+
+    #sobremiTxt {
+        font-size: 1em;
+    }
+
+    #fotoprincipal {
+        display: none;
+    }
+
+    #fotoprincipal_mobile {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+
+    .photoGallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario_div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90vw;
+        align-content: space-around;
+        padding: 5%;
+    }
+
+    .formulario_subdiv {
+        padding: 3%;
+        width: 50vw;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,26 @@
+#mainIndex {
+    
+    display: flex;
+    flex-direction: column;
+    
+    #fotoprincipal {
+        width: 100vw;
+        height: auto;
+    }
+    #fotoprincipal_mobile {
+        display: none;
+    }
+    #sobremiTitle {
+        margin: 3%;
+        font-size: 2em;
+    }
+    
+    #sobremiTxt {
+        margin: 6%;
+        margin-top: 0%;
+        font-family: 'Nunito';
+        text-align: justify;
+        font-size: 1.2em;
+    }
+    
+}
