@@ -78,11 +78,7 @@ header a:hover {
     scale: 1.2;
 }
 
-#mainIndex {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-}
+
 
 label,
 #check {
@@ -159,6 +155,11 @@ p {
 }
 
 /* MAIN INDEX*/
+#mainIndex {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
 
 #sobremiTitle {
     margin: 3%;
