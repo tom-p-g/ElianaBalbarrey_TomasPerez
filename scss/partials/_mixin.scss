@@ -1,0 +1,57 @@
+@mixin animacion1 {
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @include transicionPaleta__principal;
+ 
+}
+
+@mixin transicionPaleta__principal {
+    animation-name: transicionPaleta__principal;
+    @keyframes transicionPaleta__principal {
+        0% {
+            background-color: $verde;
+        }
+        30% {
+            background-color: $bordeaux;
+        }
+        60% {
+            background-color: $violeta;
+        }
+        90% {
+            background-color: $dorado;
+        }
+        100% {
+            background-color: $verde;
+        }
+    }
+ }
+
+@mixin animacion2 {
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @include transicionPaleta_secundaria;
+    
+   
+}
+@mixin transicionPaleta_secundaria {
+    animation-name: transicionPaleta__secundaria;
+    @keyframes transicionPaleta__secundaria {
+        0% {
+            color: $dorado;
+        }
+        30% {
+            color:#eb951f;
+        }
+        60% {
+            color: white;
+        }
+        80% {
+            color: $bordeaux;
+        }
+        100% {
+            color: $dorado;
+        }
+    }
+}

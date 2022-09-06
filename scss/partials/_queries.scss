@@ -25,9 +25,9 @@
                 font-size: 2em;
                 display: inline-block;
                 cursor: pointer;
-                color: white;
+                @include animacion1;
                 width: auto;
-                background: #c98703;
+                color: white;
                 height: auto;
                 width: 30px;
                 grid-area: col1;
@@ -66,7 +66,7 @@
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    @include animacion2;
                     font-size: 2em;
 
                 }

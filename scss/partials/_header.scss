@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: space-around;
     background-color: $verde;
+    
+    @include animacion1;
+    
+   
 
     .encabezado_index {
         width: 40vw;
@@ -22,10 +26,11 @@
             color: white;
             font-size: 1.3em;
             transition: all 1s;
+            @include animacion2;
 
             &:hover {
-                color: $dorado;
-                scale: 1.1;
+             
+                scale: 1.05;
             }
         }
         .logo {
@@ -52,12 +57,13 @@
             font-family: $font2;
             font-size: 1.7em;
             transition: all 1s;
+            @include animacion2;
            
         }
         .encabezado_menu_botones {
             &:hover {
-                color: $dorado;
-                scale: 1.2;
+            
+                scale: 1.05;
             }
         }
     }

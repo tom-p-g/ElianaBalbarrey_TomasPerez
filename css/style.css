@@ -15,7 +15,23 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #43652a; }
+  background-color: #43652a;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: transicionPaleta__principal; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
   .encabezado .encabezado_index {
     width: 40vw;
     margin-right: 5%;
@@ -29,10 +45,25 @@
       font-family: "Great Vibes";
       color: white;
       font-size: 1.3em;
-      transition: all 1s; }
+      transition: all 1s;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: transicionPaleta__secundaria; }
+
+@keyframes transicionPaleta__secundaria {
+  0% {
+    color: #c98703; }
+  30% {
+    color: #eb951f; }
+  60% {
+    color: white; }
+  80% {
+    color: #671313; }
+  100% {
+    color: #c98703; } }
       .encabezado .encabezado_index a:hover {
-        color: #c98703;
-        scale: 1.1; }
+        scale: 1.05; }
     .encabezado .encabezado_index .logo {
       height: auto;
       width: 7vw;
@@ -50,10 +81,25 @@
       color: white;
       font-family: "Nunito";
       font-size: 1.7em;
-      transition: all 1s; }
+      transition: all 1s;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: transicionPaleta__secundaria; }
+
+@keyframes transicionPaleta__secundaria {
+  0% {
+    color: #c98703; }
+  30% {
+    color: #eb951f; }
+  60% {
+    color: white; }
+  80% {
+    color: #671313; }
+  100% {
+    color: #c98703; } }
     .encabezado_menu .menu .encabezado_menu_botones:hover {
-      color: #c98703;
-      scale: 1.2; }
+      scale: 1.05; }
   .encabezado_menu label, .encabezado_menu #check, .encabezado_menu #indexMenu {
     display: none; }
 
@@ -127,10 +173,27 @@ p {
 footer {
   grid-area: footer;
   display: flex;
+  width: 100vw;
   align-items: center;
   justify-content: space-around;
   justify-items: center;
-  margin: 5%; }
+  padding: 5%;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: transicionPaleta__principal; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
   footer .firma {
     height: auto;
     width: 40vw; }
@@ -234,15 +297,29 @@ footer {
       font-size: 2em;
       display: inline-block;
       cursor: pointer;
-      color: white;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: transicionPaleta__principal;
       width: auto;
-      background: #c98703;
+      color: white;
       height: auto;
       width: 30px;
       grid-area: col1;
       padding-left: 5px;
       border-radius: 0.5em;
       margin-left: 10px; }
+  @keyframes transicionPaleta__principal {
+    0% {
+      background-color: #43652a; }
+    30% {
+      background-color: #671313; }
+    60% {
+      background-color: #462037; }
+    90% {
+      background-color: #c98703; }
+    100% {
+      background-color: #43652a; } }
     .encabezado .encabezado_menu #check {
       display: none; }
       .encabezado .encabezado_menu #check:checked ~ .menu {
@@ -263,8 +340,22 @@ footer {
       padding-right: 10vw; }
       .encabezado .encabezado_menu #indexMenu a {
         text-decoration: none;
-        color: white;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: transicionPaleta__secundaria;
         font-size: 2em; }
+  @keyframes transicionPaleta__secundaria {
+    0% {
+      color: #c98703; }
+    30% {
+      color: #eb951f; }
+    60% {
+      color: white; }
+    80% {
+      color: #671313; }
+    100% {
+      color: #c98703; } }
     .encabezado .encabezado_menu .menu {
       display: none; }
       .encabezado .encabezado_menu .menu a {

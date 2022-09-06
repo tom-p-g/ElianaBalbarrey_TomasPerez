@@ -1,10 +1,12 @@
 footer {
     grid-area: footer;
     display: flex;
+    width: 100vw;
     align-items: center;
     justify-content: space-around;
     justify-items: center;
-    margin: 5%;
+    padding: 5%;
+    @include animacion1;
     .firma {
         height: auto;
         width: 40vw;
