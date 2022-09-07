@@ -4,7 +4,7 @@
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
     background-color: $verde;
     
     @include animacion1;
@@ -13,13 +13,11 @@
 
     .encabezado_index {
         width: 40vw;
-        margin-right: 5%;
-        margin-top: 1%;
+        padding: 2%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-
+        justify-content: space-between;
         a{
             text-decoration: none;
             font-family: $font1;
@@ -36,7 +34,7 @@
         .logo {
             height: auto;
             width: 7vw;
-            margin: 8%;
+            padding: 3%;
             transition: all 1s;
         
         }
@@ -45,7 +43,7 @@
 
 }
 .encabezado_menu {
-    width: 50vw;
+    width: 50%;
     .menu {
         list-style: none;
         display: flex;
@@ -53,9 +51,11 @@
 
         a{
             text-decoration: none;
+            padding: 1%;
             color: white;
             font-family: $font2;
-            font-size: 1.7em;
+            text-transform: uppercase;
+            font-size: 1.3em;
             transition: all 1s;
             @include animacion2;
            

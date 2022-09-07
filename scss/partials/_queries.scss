@@ -42,11 +42,16 @@
 
                 &:checked~.menu {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     text-align: center;
                     grid-area: row2;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
+                    font-family: $font2;
+
+                    a {
+                        font-size: 90%;
+                    }
 
                 }
 
@@ -54,7 +59,7 @@
 
             #indexMenu {
                 display: flex;
-                font-family: 'Great Vibes';
+                font-family: $font1;
 
                 text-align: center;
                 grid-area: col2;
@@ -86,17 +91,17 @@
     }
 
     #mainIndex {
-        
+
         #fotoprincipal {
             display: none;
         }
-    
+
         #fotoprincipal_mobile {
             display: block;
             width: 100vw;
             height: auto;
         }
-    
+
     }
 
     fieldset {
@@ -118,6 +123,16 @@
 }
 
 @media screen and (max-width:480px) {
+    #check {
+        &:checked~.menu {
+
+            a {
+                font-size: 80%;
+            }
+
+        }
+    }
+
 
 
     #sobremiTxt {
@@ -129,10 +144,12 @@
         flex-direction: column;
         align-content: center;
         justify-content: center;
+
         .rrss {
 
             width: 70vw;
         }
+
         .firma {
             width: 75vw;
             align-self: center;
@@ -140,11 +157,12 @@
         }
     }
 
-   
 
-   
+
+
 
 }
+
 
 @media screen and (max-width:375px) {
     .encabezado_index {
@@ -160,7 +178,7 @@
         font-size: 1em;
     }
 
-   
+
 
 
     .photoGallery {

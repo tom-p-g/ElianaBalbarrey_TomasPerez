@@ -10,17 +10,36 @@
     #fotoprincipal_mobile {
         display: none;
     }
-    #sobremiTitle {
-        margin: 3%;
-        font-size: 2em;
+    .subtitulo {
+        
+        @include animacion1;
+        padding: 5%;
+       
+        #sobremiTitle {
+            margin: 3%;
+            font-size: 2em;
+            @include animacion2;
+        }
+
     }
+   
     
-    #sobremiTxt {
-        margin: 6%;
-        margin-top: 0%;
-        font-family: 'Nunito';
+    .cajita {
+        
+        padding: 5%;
         text-align: justify;
         font-size: 1.2em;
+        background-image: url(../../img/misc/textura1.jpg);
+        .cajita__titulo {
+            font-family: $font2;
+            font-weight: 600;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        .cajita__contenido {
+            font-family: $font3;
+            font-weight: 400;
+        }
     }
     
 }

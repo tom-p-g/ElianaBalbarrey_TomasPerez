@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +35,11 @@
     background-color: #43652a; } }
   .encabezado .encabezado_index {
     width: 40vw;
-    margin-right: 5%;
-    margin-top: 1%;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-between; }
     .encabezado .encabezado_index a {
       text-decoration: none;
       font-family: "Great Vibes";
@@ -67,20 +67,22 @@
     .encabezado .encabezado_index .logo {
       height: auto;
       width: 7vw;
-      margin: 8%;
+      padding: 3%;
       transition: all 1s; }
 
 .encabezado_menu {
-  width: 50vw; }
+  width: 50%; }
   .encabezado_menu .menu {
     list-style: none;
     display: flex;
     justify-content: space-around; }
     .encabezado_menu .menu a {
       text-decoration: none;
+      padding: 1%;
       color: white;
       font-family: "Nunito";
-      font-size: 1.7em;
+      text-transform: uppercase;
+      font-size: 1.3em;
       transition: all 1s;
       animation-duration: 30s;
       animation-iteration-count: infinite;
@@ -160,15 +162,56 @@ p {
     height: auto; }
   #mainIndex #fotoprincipal_mobile {
     display: none; }
-  #mainIndex #sobremiTitle {
-    margin: 3%;
-    font-size: 2em; }
-  #mainIndex #sobremiTxt {
-    margin: 6%;
-    margin-top: 0%;
-    font-family: 'Nunito';
+  #mainIndex .subtitulo {
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: transicionPaleta__principal;
+    padding: 5%; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
+    #mainIndex .subtitulo #sobremiTitle {
+      margin: 3%;
+      font-size: 2em;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: transicionPaleta__secundaria; }
+
+@keyframes transicionPaleta__secundaria {
+  0% {
+    color: #c98703; }
+  30% {
+    color: #eb951f; }
+  60% {
+    color: white; }
+  80% {
+    color: #671313; }
+  100% {
+    color: #c98703; } }
+  #mainIndex .cajita {
+    padding: 5%;
     text-align: justify;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    background-image: url(../../img/misc/textura1.jpg); }
+    #mainIndex .cajita .cajita__titulo {
+      font-family: "Nunito";
+      font-weight: 600;
+      font-size: 1.3em;
+      text-align: center; }
+    #mainIndex .cajita .cajita__contenido {
+      font-family: "Poppins";
+      font-weight: 400; }
 
 footer {
   grid-area: footer;
@@ -196,7 +239,7 @@ footer {
     background-color: #43652a; } }
   footer .firma {
     height: auto;
-    width: 40vw; }
+    width: 40%; }
   footer .rrss {
     width: 40vw;
     display: flex;
@@ -324,14 +367,17 @@ footer {
       display: none; }
       .encabezado .encabezado_menu #check:checked ~ .menu {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         grid-area: row2;
-        justify-content: center;
-        align-items: center; }
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Nunito"; }
+        .encabezado .encabezado_menu #check:checked ~ .menu a {
+          font-size: 90%; }
     .encabezado .encabezado_menu #indexMenu {
       display: flex;
-      font-family: 'Great Vibes';
+      font-family: "Great Vibes";
       text-align: center;
       grid-area: col2;
       justify-content: center;
@@ -376,6 +422,8 @@ footer {
     font-size: 1em; } }
 
 @media screen and (max-width: 480px) {
+  #check:checked ~ .menu a {
+    font-size: 80%; }
   #sobremiTxt {
     font-size: 1em; }
   footer {
