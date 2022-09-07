@@ -84,6 +84,7 @@ animation-name: fadein;
 animation-iteration-count: initial;
 animation-duration: $duracion;
 animation-timing-function:ease-in;
+transition: all;
 }
 @keyframes fadein {
 0% {

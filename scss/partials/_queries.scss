@@ -137,6 +137,11 @@
     #sobremiTxt {
         font-size: 1em;
     }
+    .photoGallery {
+      
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -179,6 +184,7 @@
     .photoGallery {
         display: flex;
         flex-direction: column;
+    
     }
 
 

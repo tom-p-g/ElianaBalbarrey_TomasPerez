@@ -160,8 +160,9 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: "Nunito";
-  font-size: 3em;
+  font-family: "Great Vibes";
+  font-weight: 100;
+  font-size: 2.5em;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -186,7 +187,8 @@ h3 {
   animation-name: fadein;
   animation-iteration-count: initial;
   animation-duration: 2s;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+  transition: all; }
 
 h6 {
   display: none;
@@ -203,13 +205,24 @@ h6 {
     font-family: "Nunito";
     font-weight: 600;
     font-size: 1.3em;
-    text-align: center; }
+    text-align: center;
+    animation-name: fadein;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    transition: all; }
   .cajita .cajita__contenido, .cajita p {
     font-family: "Nunito";
     font-weight: 400;
     font-size: 1em;
     text-align: justify;
-    padding-block: 1em; }
+    padding-block: 1em;
+    animation-name: fadein;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    transition: all;
+    animation-timing-function: linear; }
 
 .foto {
   border: solid 10px white; }
@@ -217,6 +230,8 @@ h6 {
 .photoGallery {
   display: grid;
   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2%;
@@ -453,7 +468,10 @@ footer {
   .formulario_div {
     width: 80vw; }
   #sobremiTxt {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .photoGallery {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   #check:checked ~ .menu .encabezado_menu_botones {
