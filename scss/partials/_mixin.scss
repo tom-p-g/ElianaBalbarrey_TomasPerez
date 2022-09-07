@@ -1,5 +1,5 @@
 @mixin animacion1 {
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     @include transicionPaleta__principal;
@@ -28,7 +28,7 @@
  }
 
 @mixin animacion2 {
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     @include transicionPaleta_secundaria;
@@ -54,4 +54,28 @@
             color: $dorado;
         }
     }
+}
+@mixin animacion2__bordes {
+    animation-name:transicionPaleta__secundaria__bordes;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @keyframes transicionPaleta__secundaria__bordes {
+        0% {
+            border-color: $dorado;
+        }
+        30% {
+            border-color:#eb951f;
+        }
+        60% {
+            border-color: white;
+        }
+        80% {
+            border-color: $bordeaux;
+        }
+        100% {
+            border-color: $dorado;
+        }
+        }
+
 }

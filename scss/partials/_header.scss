@@ -51,19 +51,21 @@
 
         a{
             text-decoration: none;
-            padding: 1%;
+            
             color: white;
             font-family: $font2;
             text-transform: uppercase;
             font-size: 1.3em;
             transition: all 1s;
             @include animacion2;
+            
            
         }
         .encabezado_menu_botones {
             &:hover {
             
                 scale: 1.05;
+               
             }
         }
     }

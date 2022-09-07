@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: #43652a;
-  animation-duration: 30s;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: transicionPaleta__principal; }
@@ -46,7 +46,7 @@
       color: white;
       font-size: 1.3em;
       transition: all 1s;
-      animation-duration: 30s;
+      animation-duration: 40s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       animation-name: transicionPaleta__secundaria; }
@@ -78,13 +78,12 @@
     justify-content: space-around; }
     .encabezado_menu .menu a {
       text-decoration: none;
-      padding: 1%;
       color: white;
       font-family: "Nunito";
       text-transform: uppercase;
       font-size: 1.3em;
       transition: all 1s;
-      animation-duration: 30s;
+      animation-duration: 40s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       animation-name: transicionPaleta__secundaria; }
@@ -113,10 +112,60 @@ body {
   justify-content: center; }
   body .main__secciones {
     width: 100vw;
-    padding: 2%;
     overflow-x: hidden; }
   body main {
     grid-area: main; }
+
+.encabezado_menu_botones {
+  border: solid 1px;
+  border-radius: 3%;
+  margin: 1px;
+  padding: 10px;
+  background-color: #95959511;
+  animation-name: transicionPaleta__secundaria__bordes;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all 0.3s;
+  box-shadow: 4px 3px 8px 1px #1616167f;
+  -webkit-box-shadow: 4px 3px 8px 1px #1616167f; }
+
+@keyframes transicionPaleta__secundaria__bordes {
+  0% {
+    border-color: #c98703; }
+  30% {
+    border-color: #eb951f; }
+  60% {
+    border-color: white; }
+  80% {
+    border-color: #671313; }
+  100% {
+    border-color: #c98703; } }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  text-align: center;
+  font-family: "Nunito";
+  margin: 3%;
+  font-size: 2em;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: transicionPaleta__secundaria; }
+
+@keyframes transicionPaleta__secundaria {
+  0% {
+    color: #c98703; }
+  30% {
+    color: #eb951f; }
+  60% {
+    color: white; }
+  80% {
+    color: #671313; }
+  100% {
+    color: #c98703; } }
 
 h3 {
   font-family: 'nunito';
@@ -134,7 +183,24 @@ h3 {
     opacity: 100%; } }
 
 h6 {
+  display: none;
   visibility: hidden; }
+
+.cajita {
+  border: solid 10px;
+  border-color: lightgray white  white lightgray;
+  padding: 5%;
+  text-align: justify;
+  font-size: 1.2em;
+  background-image: url(../../img/misc/textura1.jpg); }
+  .cajita .cajita__titulo {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center; }
+  .cajita .cajita__contenido {
+    font-family: "Poppins";
+    font-weight: 400; }
 
 p {
   font-family: "Nunito";
@@ -163,7 +229,7 @@ p {
   #mainIndex #fotoprincipal_mobile {
     display: none; }
   #mainIndex .subtitulo {
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: transicionPaleta__principal;
@@ -180,38 +246,6 @@ p {
     background-color: #c98703; }
   100% {
     background-color: #43652a; } }
-    #mainIndex .subtitulo #sobremiTitle {
-      margin: 3%;
-      font-size: 2em;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-name: transicionPaleta__secundaria; }
-
-@keyframes transicionPaleta__secundaria {
-  0% {
-    color: #c98703; }
-  30% {
-    color: #eb951f; }
-  60% {
-    color: white; }
-  80% {
-    color: #671313; }
-  100% {
-    color: #c98703; } }
-  #mainIndex .cajita {
-    padding: 5%;
-    text-align: justify;
-    font-size: 1.2em;
-    background-image: url(../../img/misc/textura1.jpg); }
-    #mainIndex .cajita .cajita__titulo {
-      font-family: "Nunito";
-      font-weight: 600;
-      font-size: 1.3em;
-      text-align: center; }
-    #mainIndex .cajita .cajita__contenido {
-      font-family: "Poppins";
-      font-weight: 400; }
 
 footer {
   grid-area: footer;
@@ -221,7 +255,7 @@ footer {
   justify-content: space-around;
   justify-items: center;
   padding: 5%;
-  animation-duration: 30s;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: transicionPaleta__principal; }
@@ -340,10 +374,7 @@ footer {
       font-size: 2em;
       display: inline-block;
       cursor: pointer;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-name: transicionPaleta__principal;
+      background-color: none;
       width: auto;
       color: white;
       height: auto;
@@ -352,17 +383,6 @@ footer {
       padding-left: 5px;
       border-radius: 0.5em;
       margin-left: 10px; }
-  @keyframes transicionPaleta__principal {
-    0% {
-      background-color: #43652a; }
-    30% {
-      background-color: #671313; }
-    60% {
-      background-color: #462037; }
-    90% {
-      background-color: #c98703; }
-    100% {
-      background-color: #43652a; } }
     .encabezado .encabezado_menu #check {
       display: none; }
       .encabezado .encabezado_menu #check:checked ~ .menu {
@@ -373,6 +393,8 @@ footer {
         justify-content: space-around;
         align-items: center;
         font-family: "Nunito"; }
+        .encabezado .encabezado_menu #check:checked ~ .menu .encabezado_menu_botones {
+          margin: 2%; }
         .encabezado .encabezado_menu #check:checked ~ .menu a {
           font-size: 90%; }
     .encabezado .encabezado_menu #indexMenu {
@@ -386,7 +408,7 @@ footer {
       padding-right: 10vw; }
       .encabezado .encabezado_menu #indexMenu a {
         text-decoration: none;
-        animation-duration: 30s;
+        animation-duration: 40s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         animation-name: transicionPaleta__secundaria;
@@ -404,9 +426,6 @@ footer {
       color: #c98703; } }
     .encabezado .encabezado_menu .menu {
       display: none; }
-      .encabezado .encabezado_menu .menu a {
-        font-size: medium;
-        padding: 0.5vh; }
   #mainIndex #fotoprincipal {
     display: none; }
   #mainIndex #fotoprincipal_mobile {

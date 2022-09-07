@@ -25,7 +25,7 @@
                 font-size: 2em;
                 display: inline-block;
                 cursor: pointer;
-                @include animacion1;
+                background-color: none;
                 width: auto;
                 color: white;
                 height: auto;
@@ -48,6 +48,10 @@
                     justify-content: space-around;
                     align-items: center;
                     font-family: $font2;
+
+                    .encabezado_menu_botones {
+                        margin: 2%;
+                    }
 
                     a {
                         font-size: 90%;
@@ -79,12 +83,6 @@
 
             .menu {
                 display: none;
-
-                a {
-                    font-size: medium;
-                    padding: 0.5vh;
-
-                }
             }
         }
 
