@@ -4,7 +4,8 @@ body {
     display: grid;
     grid-template-areas: "encabezado"
         "main"
-        "footer";
+        "footer"
+        "autobombo";
     justify-content: center; 
     background-image: url(../../img/misc/textura1.jpg); 
       
@@ -104,5 +105,21 @@ p {
 .fotoGaleria {
     width: 100%;
     height: 100%;
+}
+.margen {
+    height: 5vh;
+}
+.autobombo {
+    height: auto;
+    width: 100vw;
+    padding: 0.5em;
+    text-align: center;
+    font-family: $font2;
+    color: white;
+    @include animacion1 (20s, linear);
+    font-size: 1em;
+    display: inline-flex;
+    justify-content: center;
+    grid-area: autobombo;
 }
 

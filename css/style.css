@@ -71,7 +71,7 @@
       font-family: "Great Vibes";
       color: white;
       font-size: 1.3em;
-      transition: all 1s;
+      transition: all 0.5s;
       animation-duration: 40s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
@@ -94,7 +94,7 @@
       height: auto;
       width: 7vw;
       padding: 3%;
-      transition: all 1s; }
+      transition: all 0.5s; }
 
 .encabezado_menu {
   width: 50%; }
@@ -128,7 +128,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   display: grid;
-  grid-template-areas: "encabezado" "main" "footer";
+  grid-template-areas: "encabezado" "main" "footer" "autobombo";
   justify-content: center;
   background-image: url(../../img/misc/textura1.jpg); }
   body .main__secciones {
@@ -262,6 +262,37 @@ section {
 .fotoGaleria {
   width: 100%;
   height: 100%; }
+
+.margen {
+  height: 5vh; }
+
+.autobombo {
+  height: auto;
+  width: 100vw;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Nunito";
+  color: white;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: transicionPaleta__principal;
+  font-size: 1em;
+  display: inline-flex;
+  justify-content: center;
+  grid-area: autobombo; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
 
 #mainIndex {
   display: flex;

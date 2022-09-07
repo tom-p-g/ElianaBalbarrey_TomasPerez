@@ -24,7 +24,7 @@
             font-family: $font1;
             color: white;
             font-size: 1.3em;
-            transition: all 1s;
+            transition: all 0.5s;
             @include animacion2 (40s, linear);
 
             &:hover {
@@ -37,7 +37,7 @@
             height: auto;
             width: 7vw;
             padding: 3%;
-            transition: all 1s;
+            transition: all 0.5s;
 
         }
 
