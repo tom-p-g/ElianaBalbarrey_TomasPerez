@@ -1,7 +1,7 @@
-@mixin animacion1 {
-    animation-duration: 40s;
+@mixin animacion1 ($duracion,$funcion) {
+    animation-duration: $duracion;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: $funcion;
     @include transicionPaleta__principal;
  
 }
@@ -27,10 +27,10 @@
     }
  }
 
-@mixin animacion2 {
-    animation-duration: 40s;
+@mixin animacion2 ($duracion,$funcion) {
+    animation-duration: $duracion;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: $funcion;
     @include transicionPaleta_secundaria;
     
    
@@ -78,4 +78,19 @@
         }
         }
 
+}
+@mixin fadein ($duracion){
+animation-name: fadein;
+animation-iteration-count: initial;
+animation-duration: $duracion;
+animation-timing-function:ease-in;
+}
+@keyframes fadein {
+0% {
+    opacity: 0%;
+}
+
+100% {
+    opacity: 100%;
+}
 }

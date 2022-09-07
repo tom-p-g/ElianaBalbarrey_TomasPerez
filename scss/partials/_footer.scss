@@ -6,7 +6,7 @@ footer {
     justify-content: space-around;
     justify-items: center;
     padding: 5%;
-    @include animacion1;
+    @include animacion1(40s,linear);
     .firma {
         height: auto;
         width: 40%;

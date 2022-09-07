@@ -1,28 +1,20 @@
 #mainIndex {
-    
+
     display: flex;
     flex-direction: column;
-    
+
     #fotoprincipal {
         width: 100vw;
         height: auto;
     }
+
     #fotoprincipal_mobile {
         display: none;
     }
+
     .subtitulo {
-        
-        @include animacion1;
-        padding: 5%;
-       
-        
-    }
-       
-         
 
+        @include animacion1 (40s,linear);
+        padding: 1%;
     }
-   
-    
-    
-    
-
+}

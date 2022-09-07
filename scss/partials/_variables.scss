@@ -1,12 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap');
-
+//** FUENTES **//
 $font1: 'Great Vibes';
 $font2: 'Nunito';
 $font3: 'Poppins';
+//** COLORES **//
 $dorado: #c98703;
 $verde:  #43652a;
 $bordeaux: #671313;
 $violeta: #462037;
+//**SOMBRAS**//
 $sombra1: #1616167f;
+%sombra1 {
+    background-color:  #95959511;
+    box-shadow: 4px 3px 8px 1px $sombra1;
+    -webkit-box-shadow: 4px 3px 8px 1px  $sombra1;
+
+}
+//**BOTONES**//
+%boton1 {
+    border: solid 1px;
+    border-radius: 3%;
+    margin:1px;
+    transition: all 0.3s;
+    padding:10px;
+    &:hover {
+            
+        scale: 1.05;
+    }
+    a{
+            text-decoration: none;
+            color: white;
+            font-family: $font2;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            transition: all 1s;
+    }
+}
+
+%textura1 {
+    background-image: url(../../img/misc/textura1.jpg); 
+}

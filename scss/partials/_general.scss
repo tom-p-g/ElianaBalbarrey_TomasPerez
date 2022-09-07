@@ -5,7 +5,9 @@ body {
     grid-template-areas: "encabezado"
         "main"
         "footer";
-    justify-content: center;    
+    justify-content: center; 
+    background-image: url(../../img/misc/textura1.jpg); 
+      
         .main__secciones {
             width: 100vw;
             overflow-x: hidden;
@@ -15,18 +17,9 @@ body {
         }
 }
 .encabezado_menu_botones {
-    border: solid 1px;
-    border-radius: 3%;
-    margin:1px;
-    padding: 10px;
-    background-color:  #95959511;
+    @extend %boton1;
+    @extend %sombra1;
     @include animacion2__bordes;
-    transition: all 0.3s;
-    box-shadow: 4px 3px 8px 1px $sombra1;
-    -webkit-box-shadow: 4px 3px 8px 1px  $sombra1;
-  
-   
-    
 }
 h1 {
     font-size: 2em;
@@ -34,40 +27,27 @@ h1 {
 h2 {
     text-align: center;
     font-family: $font2;
-    margin: 3%;
-    font-size: 2em;
-    @include animacion2;
+    font-size: 3em;
+    @include animacion2(40s,linear);
 }
 h3 {
     font-family: 'nunito';
     text-align: center;
     font-size: 1.3em;
-
-    animation-name: fadein;
-    animation-iteration-count: initial;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-}
-@keyframes fadein {
-    0% {
-        opacity: 0%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
+    @include fadein(2s);
 }
 h6 {
     display: none;
     visibility: hidden;
 }
 .cajita {
-    border: solid 10px;
-    border-color:lightgray white  white lightgray;    
-    padding: 5%;
+    background-color:rgba(179, 179, 179, 0.405) ; 
+    padding: 3%;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: justify;
     font-size: 1.2em;
-    background-image: url(../../img/misc/textura1.jpg);
+    
     .cajita__titulo {
         font-family: $font2;
         font-weight: 600;
@@ -75,24 +55,28 @@ h6 {
         text-align: center;
     }
     .cajita__contenido {
-        font-family: $font3;
-        font-weight: 400;
+        font-family: $font2;
+        font-weight: 400;font-size: 1em;
+        text-align: justify;
+        padding-block: 1em;
     }
 }
 p {
-    font-family: $font2 ;
-    font-size: 1em;
-    text-align: justify;
-    margin: 3%;
+    @extend .cajita__contenido;
+}
+.foto {
+    border: solid 10px white;
+    @extend %sombra1;
+
 }
 .photoGallery {
-
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 1em 1em;
+    grid-gap: 2%;
     align-items: stretch;
+    padding:1%
 }
 
 .fotoGaleria {

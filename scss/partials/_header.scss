@@ -4,12 +4,12 @@
     height: auto;
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    background-color: $verde;
-    
-    @include animacion1;
-    
-   
+    justify-content: space-around;
+
+
+    @include animacion1 (40s, linear);
+
+
 
     .encabezado_index {
         width: 40vw;
@@ -18,60 +18,60 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        a{
+
+        a {
             text-decoration: none;
             font-family: $font1;
             color: white;
             font-size: 1.3em;
             transition: all 1s;
-            @include animacion2;
+            @include animacion2 (40s, linear);
 
             &:hover {
-             
+
                 scale: 1.05;
             }
         }
+
         .logo {
             height: auto;
             width: 7vw;
             padding: 3%;
             transition: all 1s;
-        
+
         }
-        
+
     }
 
 }
+
 .encabezado_menu {
     width: 50%;
+
     .menu {
-        list-style: none;
+
         display: flex;
         justify-content: space-around;
 
-        a{
-            text-decoration: none;
-            
-            color: white;
-            font-family: $font2;
-            text-transform: uppercase;
-            font-size: 1.3em;
-            transition: all 1s;
-            @include animacion2;
-            
-           
-        }
         .encabezado_menu_botones {
-            &:hover {
             
-                scale: 1.05;
-               
-            }
-        }
-    }
-    label,#check, #indexMenu  {
-        display: none
-    }
+            a {
 
-    
+                @include animacion2(40s,linear);
+
+
+            }
+
+        }
+
+
+    }
 }
+
+label,
+#check,
+#indexMenu {
+    display: none
+}
+
+

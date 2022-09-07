@@ -1,6 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap");
+.encabezado_menu_botones, .foto {
+  background-color: #95959511;
+  box-shadow: 4px 3px 8px 1px #1616167f;
+  -webkit-box-shadow: 4px 3px 8px 1px #1616167f; }
+
+.encabezado_menu_botones {
+  border: solid 1px;
+  border-radius: 3%;
+  margin: 1px;
+  transition: all 0.3s;
+  padding: 10px; }
+  .encabezado_menu_botones:hover {
+    scale: 1.05; }
+  .encabezado_menu_botones a {
+    text-decoration: none;
+    color: white;
+    font-family: "Nunito";
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: all 1s; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +43,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #43652a;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -73,16 +99,9 @@
 .encabezado_menu {
   width: 50%; }
   .encabezado_menu .menu {
-    list-style: none;
     display: flex;
     justify-content: space-around; }
-    .encabezado_menu .menu a {
-      text-decoration: none;
-      color: white;
-      font-family: "Nunito";
-      text-transform: uppercase;
-      font-size: 1.3em;
-      transition: all 1s;
+    .encabezado_menu .menu .encabezado_menu_botones a {
       animation-duration: 40s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
@@ -99,17 +118,19 @@
     color: #671313; }
   100% {
     color: #c98703; } }
-    .encabezado_menu .menu .encabezado_menu_botones:hover {
-      scale: 1.05; }
-  .encabezado_menu label, .encabezado_menu #check, .encabezado_menu #indexMenu {
-    display: none; }
+
+label,
+#check,
+#indexMenu {
+  display: none; }
 
 body {
   overflow-x: hidden;
   width: 100vw;
   display: grid;
   grid-template-areas: "encabezado" "main" "footer";
-  justify-content: center; }
+  justify-content: center;
+  background-image: url(../../img/misc/textura1.jpg); }
   body .main__secciones {
     width: 100vw;
     overflow-x: hidden; }
@@ -117,18 +138,10 @@ body {
     grid-area: main; }
 
 .encabezado_menu_botones {
-  border: solid 1px;
-  border-radius: 3%;
-  margin: 1px;
-  padding: 10px;
-  background-color: #95959511;
   animation-name: transicionPaleta__secundaria__bordes;
   animation-duration: 40s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transition: all 0.3s;
-  box-shadow: 4px 3px 8px 1px #1616167f;
-  -webkit-box-shadow: 4px 3px 8px 1px #1616167f; }
+  animation-timing-function: linear; }
 
 @keyframes transicionPaleta__secundaria__bordes {
   0% {
@@ -148,8 +161,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: "Nunito";
-  margin: 3%;
-  font-size: 2em;
+  font-size: 3em;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -176,45 +188,40 @@ h3 {
   animation-duration: 2s;
   animation-timing-function: ease-in; }
 
-@keyframes fadein {
-  0% {
-    opacity: 0%; }
-  100% {
-    opacity: 100%; } }
-
 h6 {
   display: none;
   visibility: hidden; }
 
 .cajita {
-  border: solid 10px;
-  border-color: lightgray white  white lightgray;
-  padding: 5%;
+  background-color: rgba(179, 179, 179, 0.405);
+  padding: 3%;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: justify;
-  font-size: 1.2em;
-  background-image: url(../../img/misc/textura1.jpg); }
+  font-size: 1.2em; }
   .cajita .cajita__titulo {
     font-family: "Nunito";
     font-weight: 600;
     font-size: 1.3em;
     text-align: center; }
-  .cajita .cajita__contenido {
-    font-family: "Poppins";
-    font-weight: 400; }
+  .cajita .cajita__contenido, .cajita p {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+    padding-block: 1em; }
 
-p {
-  font-family: "Nunito";
-  font-size: 1em;
-  text-align: justify;
-  margin: 3%; }
+.foto {
+  border: solid 10px white; }
 
 .photoGallery {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 1em 1em;
-  align-items: stretch; }
+  grid-gap: 2%;
+  align-items: stretch;
+  padding: 1%; }
 
 .fotoGaleria {
   width: 100%;
@@ -233,7 +240,7 @@ p {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: transicionPaleta__principal;
-    padding: 5%; }
+    padding: 1%; }
 
 @keyframes transicionPaleta__principal {
   0% {
@@ -357,6 +364,12 @@ footer {
         #formulario fieldset .formulario_div input:focus {
           transform: scale(1.2); }
 
+@media screen and (max-width: 1024px) {
+  .encabezado_menu .menu .encabezado_menu_botones {
+    padding: 5px; }
+    .encabezado_menu .menu .encabezado_menu_botones a {
+      font-size: 90%; } }
+
 @media screen and (max-width: 768px) {
   .encabezado .encabezado_index {
     display: none; }
@@ -426,6 +439,8 @@ footer {
       color: #c98703; } }
     .encabezado .encabezado_menu .menu {
       display: none; }
+      .encabezado .encabezado_menu .menu .encabezado_menu_botones {
+        padding: 10px; }
   #mainIndex #fotoprincipal {
     display: none; }
   #mainIndex #fotoprincipal_mobile {
@@ -441,6 +456,8 @@ footer {
     font-size: 1em; } }
 
 @media screen and (max-width: 480px) {
+  #check:checked ~ .menu .encabezado_menu_botones {
+    padding: 5px; }
   #check:checked ~ .menu a {
     font-size: 80%; }
   #sobremiTxt {
@@ -455,17 +472,25 @@ footer {
     footer .firma {
       width: 75vw;
       align-self: center;
-      margin: 4%; } }
+      margin: 4%; }
+  .photoGallery {
+    display: flex;
+    flex-direction: column; } }
 
 @media screen and (max-width: 375px) {
+  .encabezado .encabezado_menu #check:checked ~ .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+    .encabezado .encabezado_menu #check:checked ~ .menu .encabezado_menu_botones {
+      padding: 5px; }
+    .encabezado .encabezado_menu #check:checked ~ .menu a {
+      font-size: 80%; }
   .encabezado_index {
     width: 80vw;
     justify-content: center; }
   #sobremiTxt {
     font-size: 1em; }
-  .photoGallery {
-    display: flex;
-    flex-direction: column; }
   .formulario_div {
     flex-direction: column;
     flex-wrap: nowrap;
