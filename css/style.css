@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap");
-.encabezado_menu_botones, .cajita .cajita__titulo, .foto {
+.encabezado_menu_botones, .cajita .cajita__titulo, .foto, #mainIndex #fotoprincipal, #mainIndex #fotoprincipal_mobile {
   background-color: #95959511;
   box-shadow: 4px 3px 8px 1px #1616167f;
   -webkit-box-shadow: 4px 3px 8px 1px #1616167f; }
@@ -130,6 +130,7 @@ body {
   display: grid;
   grid-template-areas: "encabezado" "main" "footer" "autobombo";
   justify-content: center;
+  align-items: center;
   background-image: url(../../img/misc/textura1.jpg); }
   body .main__secciones {
     width: 100vw;
@@ -202,6 +203,8 @@ section {
   padding: 3%;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,8 +248,12 @@ section {
     transition: all;
     animation-timing-function: linear; }
 
-.foto {
-  border: solid 10px white; }
+.foto, #mainIndex #fotoprincipal, #mainIndex #fotoprincipal_mobile {
+  background-color: rgba(248, 219, 248, 0.708);
+  justify-content: center;
+  height: auto;
+  padding: 2%;
+  border-radius: 2%; }
 
 .photoGallery {
   display: grid;
@@ -264,7 +271,7 @@ section {
   height: 100%; }
 
 .margen {
-  height: 5vh; }
+  height: 2.5vh; }
 
 .autobombo {
   height: auto;
@@ -298,8 +305,10 @@ section {
   display: flex;
   flex-direction: column; }
   #mainIndex #fotoprincipal {
-    width: 100vw;
-    height: auto; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #mainIndex #fotoprincipal_mobile {
     display: none; }
   #mainIndex .subtitulo {
@@ -307,7 +316,8 @@ section {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: transicionPaleta__principal;
-    padding: 1%; }
+    padding: 1%;
+    margin-top: 2vh; }
 
 @keyframes transicionPaleta__principal {
   0% {
@@ -480,9 +490,10 @@ footer {
   #mainIndex #fotoprincipal {
     display: none; }
   #mainIndex #fotoprincipal_mobile {
-    display: block;
-    width: 100vw;
-    height: auto; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   fieldset {
     display: flex;
     flex-direction: column; }

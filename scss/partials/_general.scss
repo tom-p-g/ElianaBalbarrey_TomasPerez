@@ -7,6 +7,7 @@ body {
         "footer"
         "autobombo";
     justify-content: center; 
+    align-items: center;
     background-image: url(../../img/misc/textura1.jpg); 
       
         .main__secciones {
@@ -15,6 +16,7 @@ body {
         }
         main {
             grid-area: main;
+           
         }
 }
 .encabezado_menu_botones {
@@ -50,6 +52,8 @@ section {
     padding: 3%;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +90,13 @@ p {
     @extend .cajita__contenido;
 }
 .foto {
-    border: solid 10px white;
+    
+    
+    background-color: rgba(248, 219, 248, 0.708);
+    justify-content:center;
+    height: auto;
+    padding: 2%;
+    border-radius: 2%;
     @extend %sombra1;
 
 }
@@ -107,7 +117,7 @@ p {
     height: 100%;
 }
 .margen {
-    height: 5vh;
+    height: 2.5vh;
 }
 .autobombo {
     height: auto;
