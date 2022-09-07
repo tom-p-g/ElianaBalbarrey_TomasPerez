@@ -22,7 +22,7 @@ body {
     @include animacion2__bordes;
 }
 h1 {
-    font-size: 2em;
+    font-size: 2.8em;
 }
 h2 {
     text-align: center;
@@ -41,12 +41,18 @@ h6 {
     display: none;
     visibility: hidden;
 }
+section {
+    margin-top: 4vh;
+}
 .cajita {
     background-color:rgba(179, 179, 179, 0.405) ; 
     padding: 3%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: justify;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2em;
    
     
@@ -55,14 +61,22 @@ h6 {
         font-weight: 600;
         font-size: 1.3em;
         text-align: center;
-        
-        @include fadein (1s);
+       border-radius: 5px;
+        @extend %sombra1;
+        width: 30vw;
+       
+        padding: 5px;
+        color: white;
+        @include animacion1 (40s,linear) 
+
+       
     }
     .cajita__contenido {
         font-family: $font2;
-        font-weight: 400;font-size: 1em;
+        font-weight: 400;
+        font-size: 1em;
         text-align: justify;
-        padding-block: 1em;
+        padding: 5%;
         @include fadein (1s);
         animation-timing-function: linear;
     }
@@ -78,8 +92,8 @@ p {
 .photoGallery {
     display: grid;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2%;

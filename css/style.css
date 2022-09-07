@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap");
-.encabezado_menu_botones, .foto {
+.encabezado_menu_botones, .cajita .cajita__titulo, .foto {
   background-color: #95959511;
   box-shadow: 4px 3px 8px 1px #1616167f;
   -webkit-box-shadow: 4px 3px 8px 1px #1616167f; }
 
-.encabezado_menu_botones {
+.encabezado_menu_botones, footer .rrss .logoFooter {
   border: solid 1px;
   border-radius: 3%;
   margin: 1px;
   transition: all 0.3s;
   padding: 10px; }
-  .encabezado_menu_botones:hover {
+  .encabezado_menu_botones:hover, footer .rrss .logoFooter:hover {
     scale: 1.05; }
-  .encabezado_menu_botones a {
+  .encabezado_menu_botones a, footer .rrss .logoFooter a {
     text-decoration: none;
     color: white;
     font-family: "Nunito";
@@ -61,7 +61,7 @@
     background-color: #43652a; } }
   .encabezado .encabezado_index {
     width: 40vw;
-    padding: 2%;
+    padding: 1vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -156,7 +156,7 @@ body {
     border-color: #c98703; } }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2.8em; }
 
 h2 {
   text-align: center;
@@ -194,29 +194,50 @@ h6 {
   display: none;
   visibility: hidden; }
 
+section {
+  margin-top: 4vh; }
+
 .cajita {
   background-color: rgba(179, 179, 179, 0.405);
   padding: 3%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: justify;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2em; }
   .cajita .cajita__titulo {
     font-family: "Nunito";
     font-weight: 600;
     font-size: 1.3em;
     text-align: center;
-    animation-name: fadein;
-    animation-iteration-count: initial;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    transition: all; }
+    border-radius: 5px;
+    width: 30vw;
+    padding: 5px;
+    color: white;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: transicionPaleta__principal; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
   .cajita .cajita__contenido, .cajita p {
     font-family: "Nunito";
     font-weight: 400;
     font-size: 1em;
     text-align: justify;
-    padding-block: 1em;
+    padding: 5%;
     animation-name: fadein;
     animation-iteration-count: initial;
     animation-duration: 1s;
@@ -230,8 +251,8 @@ h6 {
 .photoGallery {
   display: grid;
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2%;
@@ -303,41 +324,8 @@ footer {
     transition: all 1s; }
     footer .rrss .logoFooter {
       height: auto;
-      width: 5vw; }
-    footer .rrss #insta {
-      animation-name: insta;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
-
-@keyframes insta {
-  0% {
-    transform: rotate(0deg); }
-  33% {
-    transform: rotate(10deg); }
-  50% {
-    transform: rotate(0deg); }
-  83% {
-    transform: rotate(-10deg); }
-  100% {
-    transform: rotate(0deg); } }
-    footer .rrss #face {
-      animation-name: face;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
-
-@keyframes face {
-  0% {
-    transform: rotate(0deg); }
-  33% {
-    transform: rotate(10deg); }
-  50% {
-    transform: rotate(0deg); }
-  83% {
-    transform: rotate(-10deg); }
-  100% {
-    transform: rotate(0deg); } }
+      width: 10vw;
+      border: none; }
 
 #formulario {
   font-family: "Nunito";
@@ -383,7 +371,9 @@ footer {
   .encabezado_menu .menu .encabezado_menu_botones {
     padding: 5px; }
     .encabezado_menu .menu .encabezado_menu_botones a {
-      font-size: 90%; } }
+      font-size: 90%; }
+  .encabezado_index a h1 {
+    font-size: 2em; } }
 
 @media screen and (max-width: 768px) {
   .encabezado .encabezado_index {
@@ -468,10 +458,7 @@ footer {
   .formulario_div {
     width: 80vw; }
   #sobremiTxt {
-    font-size: 1em; }
-  .photoGallery {
-    margin-top: 20px;
-    margin-bottom: 20px; } }
+    font-size: 1em; } }
 
 @media screen and (max-width: 480px) {
   #check:checked ~ .menu .encabezado_menu_botones {

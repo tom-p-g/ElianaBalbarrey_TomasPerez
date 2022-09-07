@@ -10,7 +10,20 @@
         }
 
     }
+    .encabezado_index {
+        a {
+            h1{
+                font-size: 2em;
 
+            }
+            
+
+        }
+        
+    }
+    
+
+    
 }
 
 
@@ -137,11 +150,7 @@
     #sobremiTxt {
         font-size: 1em;
     }
-    .photoGallery {
-      
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }
+    
 }
 
 @media screen and (max-width:480px) {
