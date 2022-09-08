@@ -22,6 +22,17 @@
     font-size: 1.3em;
     transition: all 1s; }
 
+.fondo__contacto {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2vh;
+  padding: 10%;
+  background-image: url(../../img/misc/carpeta1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
 @keyframes fadein {
   0% {
     opacity: 0%; }
@@ -368,27 +379,29 @@ footer {
       width: 10vw;
       border: none; }
 
-#formulario {
+.fondo__contacto #formulario {
   font-family: "Nunito";
   font-weight: 100;
   font-size: 1em;
   width: 100%;
   margin: 1%; }
-  #formulario fieldset {
+  .fondo__contacto #formulario fieldset {
     display: flex;
     justify-content: space-around;
-    background-color: lightgrey;
+    border: none;
     flex-wrap: wrap;
     justify-items: left;
-    align-items: center; }
-    #formulario fieldset legend {
+    align-items: center;
+    padding-left: 10%; }
+    .fondo__contacto #formulario fieldset legend {
       font-size: 26pts;
+      font-family: "Nunito";
       text-transform: uppercase;
       font-weight: 200;
-      background-color: lightgrey;
-      padding: 1.5%;
-      border: solid grey 0.1em; }
-    #formulario fieldset .formulario_div {
+      border: none;
+      background-color: rgba(255, 255, 224, 0.618);
+      padding: 1%; }
+    .fondo__contacto #formulario fieldset .formulario_div {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-around;
@@ -396,16 +409,16 @@ footer {
       width: 40vw;
       padding: 3%;
       margin: 1%; }
-      #formulario fieldset .formulario_div .formulario_subdiv {
+      .fondo__contacto #formulario fieldset .formulario_div .formulario_subdiv {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
         width: 20vw;
         padding: 2%; }
-      #formulario fieldset .formulario_div input {
+      .fondo__contacto #formulario fieldset .formulario_div input {
         font-family: 'nunito';
         transition: all 1s; }
-        #formulario fieldset .formulario_div input:focus {
+        .fondo__contacto #formulario fieldset .formulario_div input:focus {
           transform: scale(1.2); }
 
 @media screen and (max-width: 1024px) {

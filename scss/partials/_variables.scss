@@ -42,3 +42,20 @@ $sombra1: #1616167f;
 %textura1 {
     background-image: url(../../img/misc/textura1.jpg); 
 }
+
+    
+
+%carpeta {
+
+    display: flex;
+    justify-content: center;
+    align-content:flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+    padding:10%;
+    background-image: url(../../img/misc/carpeta1.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+   
+    
+}

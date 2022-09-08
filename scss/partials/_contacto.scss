@@ -1,3 +1,7 @@
+.fondo__contacto {
+    @extend %carpeta;
+
+
 #formulario {
     font-family: $font2;
     font-weight: 100;
@@ -6,22 +10,30 @@
     margin: 1%;
  
     
+ 
+    
     fieldset {
+        
         display: flex;
         justify-content: space-around;
-        background-color: lightgrey;
+        border: none;
+       
         flex-wrap: wrap;
         justify-items: left;
         align-items: center;
+        padding-left: 10%;
     
         
         legend {
             font-size: 26pts;
+            font-family: $font2;
             text-transform: uppercase;
             font-weight: 200;
-            background-color: lightgrey;
-            padding: 1.5%;
-            border: solid grey 0.1em;
+            border: none;
+            background-color: rgba(255, 255, 224, 0.618);
+            padding: 1%;
+            
+            
         }
         
         .formulario_div {
@@ -51,4 +63,5 @@
             }
         }
     }
+}
 }
