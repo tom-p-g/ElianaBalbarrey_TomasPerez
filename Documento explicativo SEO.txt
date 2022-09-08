@@ -1,0 +1,8 @@
+﻿SEO:
+
+
+* Ajuste los títulos de todas las páginas con un “-$sección”
+* Cambie la meta descripción de todos los html en relación a lo que contienen.
+* Agregue palabras clave nombrando elementos que tienen que ver con la página, su rubro y su trabajo.
+* Agregué “alt”s a las imágenes.
+* Cree etiquetas semánticas, y utilice etiquetas con jerarquía en toda la web.

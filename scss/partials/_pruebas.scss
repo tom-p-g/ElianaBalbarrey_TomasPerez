@@ -1,0 +1,56 @@
+//** LAS PRUEBAS SE ENCUENTRAN AL FINAL DE LA PAGINA DE CONTACTOS: Practica de codigo para sass2 //
+//Hay cosas aplicadas a la pagina principalmente variables, mixin, extends, y maps para la $paleta,//
+//No use ningun condicional aun**//
+.pruebas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .pruebasTitulo{
+        display: block;
+        text-align: center;
+        font-family: $font3;
+    }
+}
+//**FOR**//
+@for $var from 1 through 4 {
+    .button#{$var} 
+    {   @extend .pruebas;
+        width: $var * 10vw;
+        height: $var * 5vh ;
+       
+        text-align: center;
+        background-color: gold;
+        color: black;
+    }
+} 
+
+//** EACH **// 
+
+@each $boda in 1,2,3,4 {
+    .boda#{$boda} {
+        background-image: url(../../img/eventos/Bodas#{$boda}.JPG);
+        width:100vw;
+        height: 60vh;
+        background-size: 100% auto;
+    }
+}
+//**MAPA**//
+$mapa: (
+    fondo1:green,
+    fondo2:violet ,
+    fondo3:gold ,
+);
+
+@each $fondo, $color in $mapa {
+    .caja#{$fondo} {
+        background-color: $color;
+        width: 100px;
+        height: 100px;
+    }
+}
+.caja4 {
+    background-color: map-get($mapa, fondo1);
+    color: map-get($mapa, fondo2); 
+    width: 100px;
+    height: 100px;
+}
