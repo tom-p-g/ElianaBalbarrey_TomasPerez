@@ -17,11 +17,10 @@ footer {
         justify-content: space-around;
         transition: all 1s;
         
-        .logoFooter {
-            height: auto;
-            width: 10vw;
-            @extend %boton1;
-            border: none;
+        .rrss1 .rrss2 {
+           
+         @extend %boton1;
+            
         }
         
     }

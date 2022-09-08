@@ -10,6 +10,11 @@ $dorado: #c98703;
 $verde:  #43652a;
 $bordeaux: #671313;
 $violeta: #462037;
+//**MARGEN**//
+
+$margenY: 1vh;
+$margenX:1vw;
+
 //**SOMBRAS**//
 $sombra1: #1616167f;
 %sombra1 {
@@ -38,7 +43,7 @@ $sombra1: #1616167f;
             transition: all 1s;
     }
 }
-
+//** BG-IMG **//
 %textura1 {
     background-image: url(../../img/misc/textura1.jpg); 
 }
@@ -58,4 +63,13 @@ $sombra1: #1616167f;
     background-size:100% 100%;
    
     
+}
+//**EACH**//
+@each $rrss in 1,2 {
+    .rrss#{$rrss} {
+            height: auto;
+            width: 10vw;
+            border: none;
+
+    }
 }
