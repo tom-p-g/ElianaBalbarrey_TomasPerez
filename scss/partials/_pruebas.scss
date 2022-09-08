@@ -28,7 +28,7 @@
 
 @each $boda in 1,2,3,4 {
     .boda#{$boda} {
-        background-image: url(../../img/eventos/Bodas#{$boda}.JPG);
+        background-image: url(../../img/eventos/Bodas#{$boda}.jpg);
         width:100vw;
         height: 60vh;
         background-size: 100% auto;
