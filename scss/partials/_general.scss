@@ -8,7 +8,7 @@ body {
         "autobombo";
     justify-content: center; 
     align-items: center;
-    background-image: url(../../img/misc/textura1.jpg); 
+    @extend %textura1; 
       
         .main__secciones {
             width: 100vw;

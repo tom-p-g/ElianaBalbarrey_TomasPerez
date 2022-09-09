@@ -22,6 +22,9 @@
     font-size: 1.3em;
     transition: all 1s; }
 
+body {
+  background-image: url(../../img/misc/textura1.jpg); }
+
 .fondo__contacto {
   display: flex;
   justify-content: center;
@@ -151,8 +154,7 @@ body {
   display: grid;
   grid-template-areas: "encabezado" "main" "footer" "autobombo";
   justify-content: center;
-  align-items: center;
-  background-image: url(../../img/misc/textura1.jpg); }
+  align-items: center; }
   body .main__secciones {
     width: 100vw;
     overflow-x: hidden; }
