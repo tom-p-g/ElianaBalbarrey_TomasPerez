@@ -458,25 +458,13 @@ footer {
       .fondo__contacto #formulario fieldset .form_row .form_input {
         padding: 1%;
         transform: scale(1.5); }
-    .fondo__contacto #formulario fieldset .formulario_div {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      align-items: center;
-      width: 40vw;
-      padding: 3%;
-      margin: 1%; }
-      .fondo__contacto #formulario fieldset .formulario_div .formulario_subdiv {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        width: 20vw;
-        padding: 2%; }
-      .fondo__contacto #formulario fieldset .formulario_div input {
-        font-family: 'nunito';
-        transition: all 1s; }
-        .fondo__contacto #formulario fieldset .formulario_div input:focus {
-          transform: scale(1.2); }
+        .fondo__contacto #formulario fieldset .form_row .form_input input {
+          font-family: 'nunito';
+          transition: all 0.5s; }
+          .fondo__contacto #formulario fieldset .form_row .form_input input:focus {
+            transform: scale(1.5);
+            font-family: "Nunito";
+            color: #43652a; }
 
 @media screen and (max-width: 1024px) {
   .encabezado_menu .menu .encabezado_menu_botones {
