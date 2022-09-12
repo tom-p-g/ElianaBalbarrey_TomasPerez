@@ -40,6 +40,11 @@ h3 {
     font-size: 1.3em;
     @include fadein(2s);
 }
+h4 {
+    font-family: $font2;
+    @extend %margenY;
+    font-size: 1.2em;
+}
 h6 {
     display: none;
     visibility: hidden;
@@ -79,7 +84,7 @@ section {
     .cajita__contenido {
         font-family: $font2;
         font-weight: 400;
-        font-size: 1em;
+   
         text-align: justify;
         padding: 5%;
         @include fadein (1s);
@@ -118,6 +123,48 @@ p {
 }
 .margen {
     height: $margenY*2.5;
+}
+.presupuesto {
+   @extend .cajita;
+   text-align: center;
+
+   
+   .presupuesto_sub {
+    padding: 1%;
+    font-family: $font2;
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ul {
+        text-align: left;
+        @extend %margenY;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li{
+            text-align: center
+        }
+
+    }
+    .txt {
+        @extend %margenY;
+        font-family: $font2;
+    }
+   }
+   
+}
+.separador {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+
+    margin: $margenY;
+    @include animacion1(40s,linear);
+
 }
 .autobombo {
     height: auto;

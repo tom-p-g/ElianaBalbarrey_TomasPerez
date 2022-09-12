@@ -1,67 +1,83 @@
 .fondo__contacto {
-    @extend %carpeta;
+    @extend .cajita;
+    
+    
+
+    #formulario {
+        width: 100%;
+        
+        
 
 
-#formulario {
-    font-family: $font2;
-    font-weight: 100;
-    font-size: 1em;
-    width: 100%;
-    margin: 1%;
- 
-    
- 
-    
-    fieldset {
-        
-        display: flex;
-        justify-content: space-around;
-        border: none;
-       
-        flex-wrap: wrap;
-        justify-items: left;
-        align-items: center;
-        padding-left: 10%;
-    
-        
-        legend {
-            font-size: 26pts;
-            font-family: $font2;
-            text-transform: uppercase;
-            font-weight: 200;
+        fieldset {
             border: none;
-            background-color: rgba(255, 255, 224, 0.618);
             padding: 1%;
-            
-            
-        }
-        
-        .formulario_div {
+            width: 100%;
             display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            width: 40vw;
-            padding: 3%;
-            margin: 1%;
+            font-family: $font2;
             
-            .formulario_subdiv {
+            .form_botones {
+                display: flex;
+                width: 40%;
+                justify-content: space-around;
+                @extend %margenY;
+            }
+           
+
+            .form_row {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                @extend %margenY;
+
+                .form_txt {
+                    padding: 1%;
+                    font-size: 1.5em;
+
+                }
+
+                .form_input {
+                    padding: 1%;
+                    transform: scale(1.5);
+
+
+                }
+
+            }
+
+            .formulario_div {
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-around;
-                width: 20vw;
-                padding: 2%;
-            }
+                align-items: center;
+                width: 40vw;
+                padding: 3%;
+                margin: 1%;
 
-            input {
-                font-family: 'nunito';
-                transition: all 1s;
-            &:focus {
-                transform: scale(1.2);
+                .formulario_subdiv {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-around;
+                    width: 20vw;
+                    padding: 2%;
+                }
 
-            }
+                input {
+                    font-family: 'nunito';
+                    transition: all 1s;
+
+                    &:focus {
+                        transform: scale(1.2);
+
+                    }
+                }
             }
         }
     }
-}
 }

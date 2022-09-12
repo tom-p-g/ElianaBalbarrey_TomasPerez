@@ -20,15 +20,22 @@ $bordeaux: #671313;
 $violeta: #462037;
 //**MARGEN**//
 
-$margenY: 1vh;
+$margenY: 2vh;
 $margenX:1vw;
+%margenY {
+   
+    margin-top: $margenY;
+    margin-bottom: $margenY;
+
+}
+
 
 //**SOMBRAS**//
 $sombra1: #1616167f;
 %sombra1 {
     background-color:  #95959511;
-    box-shadow: 4px 3px 8px 1px $sombra1;
     -webkit-box-shadow: 4px 3px 8px 1px  $sombra1;
+    box-shadow: 4px 3px 8px 1px $sombra1;
 
 }
 //**BOTONES**//

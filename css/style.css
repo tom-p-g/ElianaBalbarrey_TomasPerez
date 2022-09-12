@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap");
-.encabezado_menu_botones, .cajita .cajita__titulo, .foto, #mainIndex #fotoprincipal, #mainIndex #fotoprincipal_mobile {
+h4, .presupuesto .presupuesto_sub ul, .presupuesto .presupuesto_sub .txt, .fondo__contacto #formulario fieldset .form_botones, .fondo__contacto #formulario fieldset .form_row {
+  margin-top: 2vh;
+  margin-bottom: 2vh; }
+
+.encabezado_menu_botones, .cajita .cajita__titulo, .presupuesto .cajita__titulo, .fondo__contacto .cajita__titulo, .foto, #mainIndex #fotoprincipal, #mainIndex #fotoprincipal_mobile {
   background-color: #95959511;
-  box-shadow: 4px 3px 8px 1px #1616167f;
-  -webkit-box-shadow: 4px 3px 8px 1px #1616167f; }
+  -webkit-box-shadow: 4px 3px 8px 1px #1616167f;
+  box-shadow: 4px 3px 8px 1px #1616167f; }
 
 .encabezado_menu_botones, footer .rrss .rrss1 .rrss2 {
   border: solid 1px;
@@ -24,17 +28,6 @@
 
 body {
   background-image: url(../../img/misc/textura1.jpg); }
-
-.fondo__contacto {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 2vh;
-  padding: 10%;
-  background-image: url(../../img/misc/carpeta1.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
 
 .rrss1 {
   height: auto;
@@ -214,6 +207,10 @@ h3 {
   animation-timing-function: ease-in;
   transition: all; }
 
+h4 {
+  font-family: "Nunito";
+  font-size: 1.2em; }
+
 h6 {
   display: none;
   visibility: hidden; }
@@ -221,7 +218,7 @@ h6 {
 section {
   margin-top: 4vh; }
 
-.cajita {
+.cajita, .presupuesto, .fondo__contacto {
   background-color: rgba(179, 179, 179, 0.405);
   padding: 3%;
   margin-top: 2vh;
@@ -233,7 +230,7 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 1.2em; }
-  .cajita .cajita__titulo {
+  .cajita .cajita__titulo, .presupuesto .cajita__titulo, .fondo__contacto .cajita__titulo {
     font-family: "Nunito";
     font-weight: 600;
     font-size: 1.3em;
@@ -258,10 +255,9 @@ section {
     background-color: #c98703; }
   100% {
     background-color: #43652a; } }
-  .cajita .cajita__contenido, .cajita p {
+  .cajita .cajita__contenido, .presupuesto .cajita__contenido, .fondo__contacto .cajita__contenido, .cajita p, .presupuesto p, .fondo__contacto p {
     font-family: "Nunito";
     font-weight: 400;
-    font-size: 1em;
     text-align: justify;
     padding: 5%;
     animation-name: fadein;
@@ -281,8 +277,8 @@ section {
 .photoGallery {
   display: grid;
   width: 100%;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2%;
@@ -294,7 +290,51 @@ section {
   height: 100%; }
 
 .margen {
-  height: 2.5vh; }
+  height: 5vh; }
+
+.presupuesto {
+  text-align: center; }
+  .presupuesto .presupuesto_sub {
+    padding: 1%;
+    font-family: "Nunito";
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .presupuesto .presupuesto_sub ul {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .presupuesto .presupuesto_sub ul li {
+        text-align: center; }
+    .presupuesto .presupuesto_sub .txt {
+      font-family: "Nunito"; }
+
+.separador {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 2vh;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: transicionPaleta__principal; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
 
 .autobombo {
   height: auto;
@@ -388,27 +428,33 @@ footer {
     transition: all 1s; }
 
 .fondo__contacto #formulario {
-  font-family: "Nunito";
-  font-weight: 100;
-  font-size: 1em;
-  width: 100%;
-  margin: 1%; }
+  width: 100%; }
   .fondo__contacto #formulario fieldset {
-    display: flex;
-    justify-content: space-around;
     border: none;
-    flex-wrap: wrap;
-    justify-items: left;
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left: 10%; }
-    .fondo__contacto #formulario fieldset legend {
-      font-size: 26pts;
-      font-family: "Nunito";
-      text-transform: uppercase;
-      font-weight: 200;
-      border: none;
-      background-color: rgba(255, 255, 224, 0.618);
-      padding: 1%; }
+    font-family: "Nunito"; }
+    .fondo__contacto #formulario fieldset .form_botones {
+      display: flex;
+      width: 40%;
+      justify-content: space-around; }
+    .fondo__contacto #formulario fieldset .form_row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 90%; }
+      .fondo__contacto #formulario fieldset .form_row .form_txt {
+        padding: 1%;
+        font-size: 1.5em; }
+      .fondo__contacto #formulario fieldset .form_row .form_input {
+        padding: 1%;
+        transform: scale(1.5); }
     .fondo__contacto #formulario fieldset .formulario_div {
       display: flex;
       flex-wrap: nowrap;
@@ -543,7 +589,13 @@ footer {
       margin: 4%; }
   .photoGallery {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .cajita .cajita__titulo, .presupuesto .cajita__titulo, .fondo__contacto .cajita__titulo {
+    font-size: 0.9em; }
+  .cajita .cajita__contenido, .presupuesto .cajita__contenido, .fondo__contacto .cajita__contenido, .cajita p, .presupuesto p, .fondo__contacto p {
+    font-size: 0.9em; }
+  .presupuesto {
+    font-size: 0.9em; } }
 
 @media screen and (max-width: 375px) {
   .encabezado .encabezado_menu #check:checked ~ .menu {
