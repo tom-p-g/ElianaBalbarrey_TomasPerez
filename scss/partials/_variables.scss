@@ -1,7 +1,8 @@
+//** FUENTES **//
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap');
-//** FUENTES **//
+
 $font1: 'Great Vibes';
 $font2: 'Nunito';
 $font3: 'Poppins';
@@ -47,7 +48,7 @@ $sombra1: #1616167f;
     padding:10px;
     &:hover {
             
-        scale: 1.05;
+        transform: scale (1.05);
     }
     a{
             text-decoration: none;
