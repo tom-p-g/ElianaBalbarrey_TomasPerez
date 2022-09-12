@@ -29,7 +29,7 @@
 
             &:hover {
 
-                scale: 1.05;
+                transform: scale(1.05);
             }
         }
 
@@ -54,10 +54,15 @@
         justify-content: space-around;
 
         .encabezado_menu_botones {
+               
+            
             
             a {
 
                 @include animacion2(40s,linear);
+                
+                
+                }
 
 
             }
@@ -66,7 +71,7 @@
 
 
     }
-}
+
 
 label,
 #check,
